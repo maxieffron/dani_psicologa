@@ -49,11 +49,76 @@
     </header>
 
     <main>
+        
+        <section class="description">
+            <h1>Contacto</h1>
+            <p>
+                Si queres recibir novedades de nuevos tips y noticias o nos queres hacer una consulta,
+                escribinos y en
+                breve nos vamos a poner en contacto con vos.
+            </p>
+        </section>
+        
+        <div class="container-info">
+            <h3>Teléfono: +54 11 6 512 0203</h3>
 
+            <h3>Horarios: Lunes a Viernes de 9 a 18 hs</h3>
+
+            <h3>Email: licdanielaeffron@gmail.com</h3>
+            
+            <h3>Instagram: Nacer con otro ser</h3>
+        </div>
+
+        <div class="container-form">
+            <form action="">
+
+                <div class="form-fields">
+
+                    <!--Nombre-->
+                    <div class="form-control_field name">
+                        <input type="text" name="name" placeholder="Nombre y Apellido" required tabindex="1">
+                    </div>
+
+                    <!--Teléfono-->
+                    <div class="form-control_field phone">   
+                        <input type="tel" name="phone" placeholder="Teléfono" required tabindex="2">
+                    </div>
+                    
+                    <!--Email-->
+                    <div class="form-control_field email">
+                        <input type="email" name="email" placeholder="Email" required tabindex="3">
+                    </div>
+
+                    <!--Asunto-->
+                    <div class="form-control_field subject">
+                        <select name="subject" id=""required tabindex="4">
+                            <option value="consulta" selected="selected">Consulta</option>
+                            
+                            <option value="Otro">otro</option>
+                        </select>
+                    </div>
+
+                    <!--Mensaje-->
+                    <div class="form-control_field message">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" required tabindex="5"></textarea>
+                    </div>
+                    
+                    <!--Botones-->
+                    <div class="form-control_field buttons">
+                        <button type="reset" tabindex="6">Borrar</button>
+
+                        <button type="submit" tabindex="7">Enviar</button>
+                    </div>
+                
+                </div>
+
+            </form>
+        </div>
 
     </main>
 
-
+    <!-- FLECHA -->
+    <a href="#" class="back-to-top"><i><img class="arrow-up" src="../assets/images/simple-up.png"> </i></a>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
