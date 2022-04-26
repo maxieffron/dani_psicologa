@@ -1,0 +1,90 @@
+/* ------ VARIABLES ------*/
+/* ------ GENERALES ------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+
+/* ------ GENERAL ------ */
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #FFAEAE;
+  text-align: center;
+}
+
+/* ------ HEADER ------*/
+nav {
+  background-color: #C4C4C4;
+  width: 100%;
+  border-bottom: 2px solid #FFAEAE;
+}
+
+.menu-logo {
+  width: 130px;
+  height: 130px;
+  background-color: lightseagreen;
+  border-radius: 50%;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav_bar {
+  flex-grow: 0;
+}
+
+.menu-nav_bar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 20px;
+}
+
+.menu-nav_bar li {
+  margin-right: 15px;
+  list-style: none;
+}
+
+.menu-nav_bar a {
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.menu-nav_bar a:hover {
+  background-color: #FFAEAE;
+  border-radius: 3px;
+}
+
+.active {
+  background-color: #FFAEAE;
+  border-radius: 3px;
+}
+
+.footer-copyright {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 40px;
+  border-top: 2px solid #FFAEAE;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  padding: 4px;
+}
+/*# sourceMappingURL=style.css.map */

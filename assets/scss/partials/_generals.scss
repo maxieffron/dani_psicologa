@@ -1,0 +1,22 @@
+/* ------ GENERALES ------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    line-height: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* ------ GENERAL ------ */
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: $secondary-color;
+    text-align: center;
+}
