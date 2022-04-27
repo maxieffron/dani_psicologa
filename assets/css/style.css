@@ -15,9 +15,47 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 h1 {
   color: #FFAEAE;
   text-align: center;
+  text-transform: uppercase;
+}
+
+/* ------ flecha para volver arriba ------ */
+.back-to-top {
+  position: fixed;
+  display: inline;
+  width: 54px;
+  height: 54px;
+  border-radius: 26px;
+  right: 15px;
+  bottom: 40px;
+  background: lightseagreen;
+  /*color: $font-color-primary;*/
+  transition: display 0.5s ease-in-out;
+  z-index: 994;
+}
+
+.back-to-top i {
+  font-size: 30px;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  /*
+      &:hover {
+        color:$font-color-primary;
+        transition: background 0.2s ease-in-out;
+      }
+      */
+}
+
+.arrow-up {
+  height: 40px;
 }
 
 /* ------ HEADER ------*/
@@ -77,6 +115,33 @@ nav {
   border-radius: 3px;
 }
 
+/* ------ INDEX ------*/
+.index-info {
+  width: 100%;
+  height: 450px;
+  background: url("../images/section-index/wallpaper.jpg") aquamarine;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+.index-info h1 {
+  /*border: 1px solid red;*/
+  color: #C4C4C4;
+  text-transform: capitalize;
+  position: relative;
+  top: 340px;
+  font-weight: 600;
+}
+
+.index-info h2 {
+  /*border: 1px solid green;*/
+  position: relative;
+  top: 340px;
+  font-weight: 600;
+}
+
+/* ------ FOOTER ------*/
 .footer-copyright {
   background-color: #C4C4C4;
   width: 100%;
