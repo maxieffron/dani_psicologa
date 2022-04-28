@@ -23,29 +23,39 @@ h2 {
 
 h1 {
     color: $secondary-color;
-    text-align: center;
     text-transform: uppercase;
+    font-weight: $font-weight-700;
+}
+
+.description {
+    h1 {
+        padding-top: 10px;
+    }
+
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* ------ flecha para volver arriba ------ */
 .back-to-top {
     position: fixed;
     display: inline;
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     border-radius: 26px;
     right: 15px;
-    bottom: 40px;
-    background: lightseagreen;
-    /*color: $font-color-primary;*/
+    bottom: 60px;
+    background: $tertiary-color;
     transition: display 0.5s ease-in-out;
     z-index: 994;
 
     i {
         font-size: 30px;
         position: absolute;
-        top: 6px;
-        left: 7px;
+        top: 5px;
+        left: 5px;
 
         /*
       &:hover {

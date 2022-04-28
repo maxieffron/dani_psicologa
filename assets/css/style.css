@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ------ VARIABLES ------*/
 /* ------ GENERALES ------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -21,22 +22,30 @@ h2 {
 }
 
 h1 {
-  color: #FFAEAE;
-  text-align: center;
+  color: #ffaeae;
   text-transform: uppercase;
+  font-weight: 700;
+}
+
+.description h1 {
+  padding-top: 10px;
+}
+
+.description p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* ------ flecha para volver arriba ------ */
 .back-to-top {
   position: fixed;
   display: inline;
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   border-radius: 26px;
   right: 15px;
-  bottom: 40px;
-  background: lightseagreen;
-  /*color: $font-color-primary;*/
+  bottom: 60px;
+  background: #99ffff;
   transition: display 0.5s ease-in-out;
   z-index: 994;
 }
@@ -44,8 +53,8 @@ h1 {
 .back-to-top i {
   font-size: 30px;
   position: absolute;
-  top: 6px;
-  left: 7px;
+  top: 5px;
+  left: 5px;
   /*
       &:hover {
         color:$font-color-primary;
@@ -60,15 +69,15 @@ h1 {
 
 /* ------ HEADER ------*/
 nav {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   width: 100%;
-  border-bottom: 2px solid #FFAEAE;
+  border-bottom: 3px solid #ffaeae;
 }
 
 .menu-logo {
   width: 130px;
   height: 130px;
-  background-color: lightseagreen;
+  background-color: #99ffff;
   border-radius: 50%;
 }
 
@@ -106,12 +115,12 @@ nav {
 }
 
 .menu-nav_bar a:hover {
-  background-color: #FFAEAE;
+  background-color: #ffaeae;
   border-radius: 3px;
 }
 
 .active {
-  background-color: #FFAEAE;
+  background-color: #ffaeae;
   border-radius: 3px;
 }
 
@@ -119,7 +128,7 @@ nav {
 .index-info {
   width: 100%;
   height: 450px;
-  background: url("../images/section-index/wallpaper.jpg") aquamarine;
+  background: url("../images/wallpaper.jpg") #99ffff;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
@@ -127,7 +136,7 @@ nav {
 
 .index-info h1 {
   /*border: 1px solid red;*/
-  color: #C4C4C4;
+  color: #c4c4c4;
   text-transform: capitalize;
   position: relative;
   top: 340px;
@@ -141,12 +150,140 @@ nav {
   font-weight: 600;
 }
 
+/* ------ SOBRE MI ------*/
+.container-about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /*background: url("../images/wallpaper.jpg") $tertiary-color;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 440px;
+  /*background-color: $secondary-color;*/
+  background: url("../images/section-about-me/about-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px 2px black;
+}
+
+.photo-profile {
+  width: 40%;
+  /*height: 48%;*/
+  /*background: red;*/
+  /*margin: 0 auto 0 auto;*/
+  /*border: 1px solid red;*/
+}
+
+.photo-profile img {
+  /*padding-top: 20px;*/
+  width: 100%;
+  height: auto;
+  /*max-width: 243px;
+        max-height: 210px;
+        */
+}
+
+.data-profile {
+  width: 80%;
+  /*height: 50%;*/
+  padding-top: 20px;
+  /*margin: 180px 4px 0 4px; /*Top-right-bottom-left*/
+  /*border: 1px solid red;*/
+}
+
+.data-profile h3 {
+  font-size: 22px;
+}
+
+.data-profile h3 span {
+  font-weight: 600;
+  /*border-bottom: 3px solid $primary-color;*/
+}
+
+.about-me {
+  height: 440px;
+  background: url("../images/section-about-me/about-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: $tertiary-color;*/
+  border: 1px solid #000000;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px 2px black;
+}
+
+.about-me p {
+  padding: 0 20px;
+}
+
+/* ------ FORMACIÓN ------*/
+.container-formacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 500px;
+  padding: 20px;
+  /*border: 1px solid blue;*/
+}
+
+.exp-data-1 {
+  background-color: greenyellow;
+  width: 100%;
+  height: 100%;
+}
+
+.exp-data-2 {
+  background-color: magenta;
+  width: 100%;
+  height: 100%;
+}
+
+.exp-data-3 {
+  background-color: lightskyblue;
+  width: 100%;
+  height: 100%;
+}
+
+.exp-data-4 {
+  background-color: lightsalmon;
+  width: 100%;
+  height: 100%;
+}
+
+.exp-icon {
+  width: 50px;
+  height: 50px;
+  /*border-radius: 50%;*/
+  color: red;
+}
+
 /* ------ FOOTER ------*/
 .footer-copyright {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   width: 100%;
   height: 40px;
-  border-top: 2px solid #FFAEAE;
+  border-top: 3px solid #ffaeae;
   text-align: center;
   font-size: 16px;
   color: #000000;

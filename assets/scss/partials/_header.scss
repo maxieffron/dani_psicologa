@@ -3,13 +3,13 @@
 nav {
     background-color: $primary-color;
     width: 100%;
-    border-bottom: 2px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
 }
 
 .menu-logo {
     width: 130px;
     height: 130px;
-    background-color: lightseagreen;
+    background-color: $tertiary-color;
     border-radius: 50%;
 }
 
