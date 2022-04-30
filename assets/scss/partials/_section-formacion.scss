@@ -13,38 +13,61 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 500px;
-    padding: 20px;
-    /*border: 1px solid blue;*/
+    height: 580px;
+    padding: 50px 0px;
 }
 
-.exp-data-1 {
-    background-color: greenyellow;
-    width: 100%;
+.exp-data {
+    width: 90%;
     height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+
+    border-radius: 6px;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 6px 2px black;
+    background-color: $primary-color;
 }
 
-.exp-data-2 {
-    background-color: magenta;
-    width: 100%;
-    height: 100%;
+.icon-exp-data {
+    position: relative;
+    width: 140px;
+    height: 140px;
+
+    display: inline-block;
+    background-color: #ffffff;
+    border: 6px solid $secondary-color;
+    border-radius: 50%;
+    margin-top: -70px;
+
+    i {
+        display: inline-block;
+        font-size: 70px;
+        color: $secondary-color;
+        padding-left: 30px;
+        padding-top: 20px;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: $primary-color;
+    }
 }
 
-.exp-data-3 {
-    background-color: lightskyblue;
-    width: 100%;
-    height: 100%;
-}
+.info-formacion {
+    h3 {
+        text-align: center;
+        padding: 10px 0;
+    }
 
-.exp-data-4 {
-    background-color: lightsalmon;
-    width: 100%;
-    height: 100%;
-}
-
-.exp-icon {
-    width: 50px;
-    height: 50px;
-    /*border-radius: 50%;*/
-    color: red;
+    p {
+        padding: 0 20px;
+    }
 }

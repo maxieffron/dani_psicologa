@@ -1,26 +1,30 @@
 /* ------ SOBRE MI ------*/
 
-.container-about-me {
+.container-principal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    /*background: url("../images/wallpaper.jpg") $tertiary-color;*/
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
-    height: 500px;
+    /*align-items: center;*/
+    padding: 40px 0;
 }
 
 .profile {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+
+    width: 80%;
     height: 440px;
-    /*background-color: $secondary-color;*/
-    background: url("../images/section-about-me/about-me.jpg");
+    background: url("../images/section-about-me/about-me.jpg") $secondary-color;
     background-repeat: no-repeat;
     background-size: cover; //Se adapta al tamaño de la pantalla
     border: 1px solid #000000;
@@ -29,18 +33,15 @@
 }
 
 .photo-profile {
-    width: 40%;
-    /*height: 48%;*/
-
-    /*background: red;*/
-
-    /*margin: 0 auto 0 auto;*/
-    /*border: 1px solid red;*/
+    width: 80%;
+    height: 40%;
+    margin: auto;
 
     img {
         /*padding-top: 20px;*/
-        width: 100%;
-        height: auto;
+        width: 40%;
+        height: 100%;
+        margin-left: 30%;
         /*max-width: 243px;
         max-height: 210px;
         */
@@ -48,33 +49,37 @@
 }
 
 .data-profile {
-    width: 80%;
-    /*height: 50%;*/
-    padding-top: 20px;
-
-    /*margin: 180px 4px 0 4px; /*Top-right-bottom-left*/
-    /*border: 1px solid red;*/
+    width: 70%;
+    height: 45%;
+    padding-top: 10px;
 
     h3 {
-        font-size: 22px;
+        font-size: 18px;
         span {
             font-weight: $font-weight-600;
-            /*border-bottom: 3px solid $primary-color;*/
         }
     }
 }
 
 .about-me {
-    height: 440px;
-    background: url("../images/section-about-me/about-me.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
-    /*background-color: $tertiary-color;*/
-    border: 1px solid #000000;
-    border-radius: 6px;
-    box-shadow: 3px 3px 6px 2px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
     p {
         padding: 0 20px;
     }
+}
+
+.container-about-me {
+    width: 80%;
+    height: 440px;
+    background: url("../images/section-about-me/about-me.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; //Se adapta al tamaño de la pantalla
+
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px 2px black;
 }

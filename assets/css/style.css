@@ -151,27 +151,30 @@ nav {
 }
 
 /* ------ SOBRE MI ------*/
-.container-about-me {
+.container-principal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  /*background: url("../images/wallpaper.jpg") $tertiary-color;*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+  /*align-items: center;*/
+  padding: 40px 0;
 }
 
 .profile {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+}
+
+.container-profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 80%;
   height: 440px;
-  /*background-color: $secondary-color;*/
-  background: url("../images/section-about-me/about-me.jpg");
+  background: url("../images/section-about-me/about-me.jpg") #ffaeae;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #000000;
@@ -180,52 +183,55 @@ nav {
 }
 
 .photo-profile {
-  width: 40%;
-  /*height: 48%;*/
-  /*background: red;*/
-  /*margin: 0 auto 0 auto;*/
-  /*border: 1px solid red;*/
+  width: 80%;
+  height: 40%;
+  margin: auto;
 }
 
 .photo-profile img {
   /*padding-top: 20px;*/
-  width: 100%;
-  height: auto;
+  width: 40%;
+  height: 100%;
+  margin-left: 30%;
   /*max-width: 243px;
         max-height: 210px;
         */
 }
 
 .data-profile {
-  width: 80%;
-  /*height: 50%;*/
-  padding-top: 20px;
-  /*margin: 180px 4px 0 4px; /*Top-right-bottom-left*/
-  /*border: 1px solid red;*/
+  width: 70%;
+  height: 45%;
+  padding-top: 10px;
 }
 
 .data-profile h3 {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .data-profile h3 span {
   font-weight: 600;
-  /*border-bottom: 3px solid $primary-color;*/
 }
 
 .about-me {
-  height: 440px;
-  background: url("../images/section-about-me/about-me.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-color: $tertiary-color;*/
-  border: 1px solid #000000;
-  border-radius: 6px;
-  box-shadow: 3px 3px 6px 2px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .about-me p {
   padding: 0 20px;
+}
+
+.container-about-me {
+  width: 80%;
+  height: 440px;
+  background: url("../images/section-about-me/about-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px 2px black;
 }
 
 /* ------ FORMACIÓN ------*/
@@ -242,40 +248,58 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 500px;
-  padding: 20px;
-  /*border: 1px solid blue;*/
+  height: 580px;
+  padding: 50px 0px;
 }
 
-.exp-data-1 {
-  background-color: greenyellow;
-  width: 100%;
+.exp-data {
+  width: 90%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 6px 2px black;
+  background-color: #c4c4c4;
 }
 
-.exp-data-2 {
-  background-color: magenta;
-  width: 100%;
-  height: 100%;
+.icon-exp-data {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 6px solid #ffaeae;
+  border-radius: 50%;
+  margin-top: -70px;
 }
 
-.exp-data-3 {
-  background-color: lightskyblue;
-  width: 100%;
-  height: 100%;
+.icon-exp-data i {
+  display: inline-block;
+  font-size: 70px;
+  color: #ffaeae;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
-.exp-data-4 {
-  background-color: lightsalmon;
-  width: 100%;
-  height: 100%;
+.icon-exp-data i:hover {
+  color: #ffffff;
 }
 
-.exp-icon {
-  width: 50px;
-  height: 50px;
-  /*border-radius: 50%;*/
-  color: red;
+.icon-exp-data:hover {
+  background-color: #c4c4c4;
+}
+
+.info-formacion h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.info-formacion p {
+  padding: 0 20px;
 }
 
 /* ------ FOOTER ------*/
