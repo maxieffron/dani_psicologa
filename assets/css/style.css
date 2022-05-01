@@ -364,7 +364,7 @@ nav {
   padding: 40px 0;
 }
 
-.container-info {
+.container-contacto-info {
   width: 40%;
   height: 350px;
   border-radius: 6px;
@@ -373,7 +373,7 @@ nav {
   justify-content: left;
 }
 
-.contacto-contacto-info {
+.contacto-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -389,7 +389,7 @@ nav {
   margin-top: auto;
 }
 
-.contacto-contacto-info i {
+.contacto-info i {
   width: 45px;
   height: 45px;
   background-color: #ffaeae;
@@ -402,14 +402,14 @@ nav {
   margin-top: 6px;
 }
 
-.contacto-contacto-info h3 {
+.contacto-info h3 {
   display: inline;
   padding-left: 10px;
   padding-top: 16px;
   font-size: 18px;
 }
 
-.contacto-contacto-info h3 span {
+.contacto-info h3 span {
   font-weight: 600;
 }
 
