@@ -323,7 +323,7 @@ nav {
 }
 
 /* Servicios */
-.container-info {
+.container-services-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -373,7 +373,7 @@ nav {
   justify-content: left;
 }
 
-.contacto-info {
+.contacto-contacto-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -389,7 +389,7 @@ nav {
   margin-top: auto;
 }
 
-.contacto-info i {
+.contacto-contacto-info i {
   width: 45px;
   height: 45px;
   background-color: #ffaeae;
@@ -402,14 +402,14 @@ nav {
   margin-top: 6px;
 }
 
-.contacto-info h3 {
+.contacto-contacto-info h3 {
   display: inline;
   padding-left: 10px;
   padding-top: 16px;
   font-size: 18px;
 }
 
-.contacto-info h3 span {
+.contacto-contacto-info h3 span {
   font-weight: 600;
 }
 
