@@ -46,7 +46,7 @@ h1 {
   border-radius: 26px;
   right: 15px;
   bottom: 60px;
-  background: #99ffff;
+  background: #aaebe7;
   transition: display 0.5s ease-in-out;
   z-index: 994;
 }
@@ -78,7 +78,7 @@ nav {
 .menu-logo {
   width: 130px;
   height: 130px;
-  background-color: #99ffff;
+  background-color: #aaebe7;
   border-radius: 50%;
   margin-left: 20px;
 }
@@ -130,7 +130,7 @@ nav {
 .index-info {
   width: 100%;
   height: 450px;
-  background: url("../images/wallpaper.jpg") #99ffff;
+  background: url("../images/wallpaper.jpg") #aaebe7;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
@@ -361,32 +361,37 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 40px 0;
+  padding: 10px 30px 40px;
+  background-image: url("../images/section-contacto/contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.contacto-description {
+  padding-bottom: 20px;
+}
+
+.contacto-description p {
+  width: 100%;
+}
+
+/* INFORMACIÓN */
 .container-contacto-info {
   width: 40%;
-  height: 350px;
+  height: 360px;
   border-radius: 6px;
   border: 1px solid #000000;
   box-shadow: 3px 3px 6px 2px black;
   justify-content: left;
+  background-color: #ffffff;
 }
 
 .contacto-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*position: relative;
-    padding-left: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50%;
-    margin-left: 20px;
-    */
   margin-left: 30px;
-  margin-top: auto;
+  margin-top: 20px;
 }
 
 .contacto-info i {
@@ -413,12 +418,81 @@ nav {
   font-weight: 600;
 }
 
-.container-form {
-  width: 50%;
-  height: 350px;
+/* FORMULARIO */
+.container-contacto-form {
+  width: 696px;
+  height: 360px;
   border-radius: 6px;
   border: 1px solid #000000;
   box-shadow: 3px 3px 6px 2px black;
+  background-color: #ffffff;
+}
+
+.container-contacto-form form {
+  width: 100%;
+  height: 100%;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.form-control_field {
+  margin-top: 20px;
+}
+
+.form-control_field input,
+.form-control_field select,
+.form-control_field textarea,
+.form-control_field button {
+  padding: 3px;
+  font-size: 18px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.form-control_field input,
+.form-control_field select {
+  width: 300px;
+}
+
+.form-control_field input:focus,
+.form-control_field select:focus {
+  background-color: #ffaeae;
+  border: 0;
+}
+
+.form-control_field textarea {
+  width: 630px;
+  height: 160px;
+  resize: none;
+}
+
+.form-control_field textarea:focus {
+  background-color: #ffaeae;
+  border: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.buttons button {
+  width: 80px;
+  margin: 0 30px;
+  background-color: #ffaeae;
+}
+
+.buttons button:hover {
+  opacity: 0.8;
+  border: 0;
 }
 
 /* ------ FOOTER ------*/
