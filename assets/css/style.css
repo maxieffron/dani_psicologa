@@ -451,7 +451,7 @@ nav {
   padding: 3px;
   font-size: 18px;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px black;
+  border: 1px solid #000000;
 }
 
 .form-control_field input,
