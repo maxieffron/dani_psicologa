@@ -1,9 +1,7 @@
 /* ------ SERVICIOS ------*/
 
 .container-services {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
 }
 
@@ -21,9 +19,7 @@
 
 /* Servicios */
 .container-services-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding: 20px 0 40px 0; //top-right-bottom-left
 }
@@ -35,9 +31,9 @@
 .services-data {
     width: 30%;
     height: 500px;
-    border-radius: 6px;
-    border: 1px solid #000000;
-    box-shadow: 3px 3px 6px 2px black;
+    border: map-get($borderShadow, borde);
+    border-radius: map-get($borderShadow, radio);
+    box-shadow: map-get($borderShadow, sombra);
 
     background: url("../images/section-servicios/servicios.jpg");
     background-repeat: no-repeat;

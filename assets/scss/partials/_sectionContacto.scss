@@ -1,9 +1,7 @@
 /* ------ CONTACTO ------*/
 
 .container-contacto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding: 10px 30px 40px;
     background-image: url("../images/section-contacto/contacto.jpg");
@@ -22,17 +20,15 @@
 .container-contacto-info {
     width: 40%;
     height: 360px;
-    border-radius: 6px;
-    border: 1px solid #000000;
-    box-shadow: 3px 3px 6px 2px black;
     justify-content: left;
     background-color: #ffffff;
+    border: map-get($borderShadow, borde);
+    border-radius: map-get($borderShadow, radio);
+    box-shadow: map-get($borderShadow, sombra);
 }
 
 .contacto-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
 
     margin-left: 30px;
     margin-top: 20px;
@@ -52,8 +48,8 @@
 
     h3 {
         display: inline;
-        padding-left: 10px;
-        padding-top: 16px;
+        padding-left: 6px;
+        padding-top: 18px;
         font-size: 18px;
         span {
             font-weight: $font-weight-600;
@@ -64,12 +60,12 @@
 /* FORMULARIO */
 
 .container-contacto-form {
-    width: 696px;
+    width: 656px;
     height: 360px;
-    border-radius: 6px;
-    border: 1px solid #000000;
-    box-shadow: 3px 3px 6px 2px black;
     background-color: #ffffff;
+    border: map-get($borderShadow, borde);
+    border-radius: map-get($borderShadow, radio);
+    box-shadow: map-get($borderShadow, sombra);
 
     form {
         width: 100%;
@@ -78,9 +74,7 @@
 }
 
 .form-fields {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
 }
 
@@ -108,7 +102,7 @@
     }
 
     textarea {
-        width: 630px;
+        width: 618px;
         height: 160px;
         resize: none;
 
@@ -120,9 +114,8 @@
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
+
     justify-content: space-between;
     margin-top: 15px;
 

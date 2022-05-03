@@ -1,0 +1,145 @@
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    //CONTACTO
+    .container-contacto {
+        @include DisplayFlex(flex, column, wrap);
+        align-items: center;
+    }
+
+    .container-contacto-info {
+        width: 650px;
+        height: 300px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .container-contacto-form {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    //CONTACTO
+    .container-contacto-info {
+        width: 80%;
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .container-contacto-form {
+        width: 80%;
+        height: 400px;
+
+        input,
+        select {
+            width: 400px;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 116px;
+            font-size: 16px;
+        }
+    }
+
+    .buttons button {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    //CONTACTO
+
+    .container-contacto-form {
+        input,
+        select {
+            width: 300px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 116px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    //CONTACTO
+    .container-contacto-info {
+        height: 250px;
+    }
+
+    .contacto-info {
+        margin-left: 20px;
+        margin-top: 10px;
+
+        i {
+            width: 30px;
+            height: 30px;
+            padding-left: 6px;
+            padding-top: 4px;
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 14px;
+            padding-top: 14px;
+        }
+    }
+
+    .container-contacto-form {
+        input,
+        select {
+            width: 280px;
+            font-size: 14px;
+        }
+
+        textarea {
+            width: 280px;
+            height: 116px;
+            font-size: 14px;
+        }
+    }
+
+    .buttons button {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    //CONTACTO
+
+    .container-contacto-info {
+        height: 200px;
+    }
+
+    .contacto-info {
+        margin-left: 20px;
+        margin-top: 10px;
+
+        i {
+            width: 25px;
+            height: 25px;
+            padding-left: 4px;
+            padding-top: 3px;
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 12px;
+            padding-top: 12px;
+        }
+    }
+
+    .container-contacto-form {
+        input,
+        select,
+        textarea {
+            width: 200px;
+        }
+    }
+}
