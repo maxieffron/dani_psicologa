@@ -19,7 +19,28 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    //SOBRE MI
+    .profile {
+        margin: 20px 0;
+    }
+
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 400px;
+        margin: 20px 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 500px;
+        margin: 20px 0;
+    }
+
     //CONTACTO
     .container-contacto-info {
         width: 80%;
@@ -53,6 +74,18 @@
 }
 
 @media screen and (max-width: 576px) {
+    //FORMACIÓN
+    .experience {
+        height: 720px;
+    }
+
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 650px;
+        margin: 20px 0;
+    }
+
     //CONTACTO
 
     .container-contacto-form {
@@ -112,8 +145,14 @@
 }
 
 @media screen and (max-width: 430px) {
-    //CONTACTO
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 750px;
+        margin: 20px 0;
+    }
 
+    //CONTACTO
     .container-contacto-info {
         height: 200px;
     }
