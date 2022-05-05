@@ -1,17 +1,11 @@
 /* ------ HEADER ------*/
 
 nav {
-    background-color: $primary-color;
+    /*background-color: $primary-color;*/
+
+    background: url("../images/fondo-nav.jpg");
     width: 100%;
     border-bottom: 3px solid $secondary-color;
-}
-
-.menu-logo {
-    width: 130px;
-    height: 130px;
-    background-color: $tertiary-color;
-    border-radius: 50%;
-    margin-left: 20px;
 }
 
 .menu-container {
@@ -20,6 +14,20 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu-logo {
+    width: 200px;
+    height: auto;
+    /*margin-left: 20px;*/
+    margin: 10px 20px;
+    /*border: 1px solid red;*/
+
+    img {
+        /*src: url("../images/Foto-de-Perfil.jpg");*/
+        width: 200px;
+        height: auto;
+    }
 }
 
 .menu-nav_bar {

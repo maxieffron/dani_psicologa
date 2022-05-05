@@ -1,4 +1,4 @@
-/* ------ SOBRE MI ------*/
+/* ------ QUIÉN SOY ------*/
 
 .container-principal {
     @include DisplayFlex(flex, row, wrap);
@@ -34,7 +34,7 @@
     img {
         /*padding-top: 20px;*/
         width: 40%;
-        height: 80%;
+        height: auto;
         margin-left: 30%;
         /*max-width: 243px;
         max-height: 210px;
@@ -55,7 +55,7 @@
     }
 }
 
-.about-me {
+.quien-soy {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
 
@@ -64,7 +64,7 @@
     }
 }
 
-.container-about-me {
+.container-quien-soy {
     width: 80%;
     height: 440px;
     background: url("../images/section-about-me/about-me.jpg");
@@ -74,4 +74,18 @@
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
+}
+
+.quien-soy-icons {
+    margin-top: 40px;
+    /*border: 1px solid red;*/
+
+    img {
+        width: 100%;
+        height: auto;
+
+        &:hover {
+            background-image: url("../images/section-quien-soy/quien-soy-iconos_hover.jpg");
+        }
+    }
 }

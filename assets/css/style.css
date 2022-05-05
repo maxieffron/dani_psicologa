@@ -25,7 +25,7 @@ h2 {
 }
 
 h1 {
-  color: #ffaeae;
+  color: #d9ada0;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -72,17 +72,10 @@ h1 {
 
 /* ------ HEADER ------*/
 nav {
-  background-color: #c4c4c4;
+  /*background-color: $primary-color;*/
+  background: url("../images/fondo-nav.jpg");
   width: 100%;
-  border-bottom: 3px solid #ffaeae;
-}
-
-.menu-logo {
-  width: 130px;
-  height: 130px;
-  background-color: #aaebe7;
-  border-radius: 50%;
-  margin-left: 20px;
+  border-bottom: 3px solid #d9ada0;
 }
 
 .menu-container {
@@ -91,6 +84,20 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-logo {
+  width: 200px;
+  height: auto;
+  /*margin-left: 20px;*/
+  margin: 10px 20px;
+  /*border: 1px solid red;*/
+}
+
+.menu-logo img {
+  /*src: url("../images/Foto-de-Perfil.jpg");*/
+  width: 200px;
+  height: auto;
 }
 
 .menu-nav_bar {
@@ -114,47 +121,72 @@ nav {
   padding: 16px;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
 .menu-nav_bar a:hover {
-  background-color: #ffaeae;
+  background-color: #d9ada0;
   border-radius: 3px;
 }
 
 .active {
-  background-color: #ffaeae;
+  background-color: #d9ada0;
   border-radius: 3px;
 }
 
 /* ------ INDEX ------*/
+/* Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #c4c4c4;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
 .index-info {
   width: 100%;
   height: 450px;
-  background: url("../images/wallpaper.jpg") #aaebe7;
+  background: url("../images/section-index/fondo-index.jpg") #aaebe7;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
 }
 
 .index-info h1 {
-  /*border: 1px solid red;*/
   color: #c4c4c4;
   text-transform: capitalize;
-  position: relative;
-  top: 340px;
   font-weight: 600;
+  margin: 30px 0;
 }
 
-.index-info h2 {
-  /*border: 1px solid green;*/
-  position: relative;
-  top: 340px;
-  font-weight: 600;
+.index-info p {
+  color: #d9ada0;
+  text-align: center;
+  font-size: 22px;
 }
 
-/* ------ SOBRE MI ------*/
+.info-h2 {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  /*margin-left: 25%;*/
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.info-h2 h2 {
+  /*display: inline-block;*/
+  font-weight: 600;
+  /*padding-bottom: 20px;*/
+  /*border: 1px solid red;*/
+  text-align: justify;
+}
+
+/* ------ QUIÉN SOY ------*/
 .container-principal {
   display: flex;
   flex-direction: row;
@@ -178,7 +210,7 @@ nav {
   justify-content: space-evenly;
   width: 80%;
   height: 440px;
-  background: url("../images/section-about-me/about-me.jpg") #ffaeae;
+  background: url("../images/section-about-me/about-me.jpg") #d9ada0;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #000000;
@@ -195,7 +227,7 @@ nav {
 .photo-profile img {
   /*padding-top: 20px;*/
   width: 40%;
-  height: 80%;
+  height: auto;
   margin-left: 30%;
   /*max-width: 243px;
         max-height: 210px;
@@ -216,18 +248,18 @@ nav {
   font-weight: 600;
 }
 
-.about-me {
+.quien-soy {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.about-me p {
+.quien-soy p {
   padding: 0 20px;
 }
 
-.container-about-me {
+.container-quien-soy {
   width: 80%;
   height: 440px;
   background: url("../images/section-about-me/about-me.jpg");
@@ -238,7 +270,21 @@ nav {
   box-shadow: 3px 3px 6px 2px black;
 }
 
-/* ------ FORMACIÓN ------*/
+.quien-soy-icons {
+  margin-top: 40px;
+  /*border: 1px solid red;*/
+}
+
+.quien-soy-icons img {
+  width: 100%;
+  height: auto;
+}
+
+.quien-soy-icons img:hover {
+  background-image: url("../images/section-quien-soy/quien-soy-iconos_hover.jpg");
+}
+
+/* ------ MI TALLER ------*/
 .container-formacion {
   display: flex;
   flex-direction: row;
@@ -276,7 +322,7 @@ nav {
   height: 140px;
   display: inline-block;
   background-color: #ffffff;
-  border: 6px solid #ffaeae;
+  border: 6px solid #d9ada0;
   border-radius: 50%;
   margin-top: -70px;
 }
@@ -284,7 +330,7 @@ nav {
 .icon-exp-data i {
   display: inline-block;
   font-size: 70px;
-  color: #ffaeae;
+  color: #d9ada0;
   padding-left: 30px;
   padding-top: 20px;
 }
@@ -306,22 +352,12 @@ nav {
   padding: 0 20px;
 }
 
-/* ------ SERVICIOS ------*/
+/* ------ PREGUNTAS FRECUENTES ------*/
 .container-services {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-/* Carousel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #c4c4c4;
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  border-radius: 50%;
 }
 
 /* Servicios */
@@ -399,7 +435,7 @@ nav {
 .contacto-info i {
   width: 45px;
   height: 45px;
-  background-color: #ffaeae;
+  background-color: #d9ada0;
   border-radius: 50%;
   display: inline-block;
   font-size: 25px;
@@ -464,7 +500,7 @@ nav {
 
 .form-control_field input:focus,
 .form-control_field select:focus {
-  background-color: #ffaeae;
+  background-color: #d9ada0;
   border: 0;
 }
 
@@ -475,7 +511,7 @@ nav {
 }
 
 .form-control_field textarea:focus {
-  background-color: #ffaeae;
+  background-color: #d9ada0;
   border: 0;
 }
 
@@ -501,7 +537,7 @@ nav {
 .buttons button {
   width: 80px;
   margin: 0 30px;
-  background-color: #ffaeae;
+  background-color: #d9ada0;
 }
 
 .buttons button:hover {
@@ -514,7 +550,7 @@ nav {
   background-color: #c4c4c4;
   width: 100%;
   height: 40px;
-  border-top: 3px solid #ffaeae;
+  border-top: 3px solid #d9ada0;
   text-align: center;
   font-size: 16px;
   color: #000000;
@@ -568,19 +604,6 @@ nav {
   .container-contacto-form {
     width: 80%;
     height: 400px;
-    /*
-        input,
-        select {
-            width: 400px;
-            font-size: 16px;
-        }
-
-        textarea {
-            width: 400px;
-            height: 116px;
-            font-size: 16px;
-        }
-        */
   }
   .buttons button {
     margin: 0 10px;

@@ -21,7 +21,9 @@
             <!-- Barra de Navegación-->
             <nav>
                 <div class="menu-container">
-                    <div class="menu-logo"></div>
+                    <div class="menu-logo">
+                        <img src="assets/images/logo.png" alt="Logo" />
+                    </div>
 
                     <div class="menu-nav_bar">
                         <ul>
@@ -30,15 +32,17 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/sobre-mi.html">Sobre mi</a>
+                                <a href="pages/quienSoy.html">¿Quién Soy?</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/formacion.html">Formación</a>
+                                <a href="pages/miTaller.html">Mi Taller</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/servicios.html">Servicios</a>
+                                <a href="pages/faq.html"
+                                    >Preguntas Frecuentes</a
+                                >
                             </li>
 
                             <li class="nav-item">
@@ -51,10 +55,108 @@
         </header>
 
         <main>
-            <div class="index-info">
-                <h1>Daniela Effron</h1>
+            <div class="container-index">
+                <!-- Carousel-->
+                <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide services-carousel"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="../assets/images/section-index/intro-1.jpg"
+                                class="d-block w-100"
+                                alt="Carousel Foto 1"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/images/section-index/intro-2.jpg"
+                                class="d-block w-100"
+                                alt="Carousel Foto 2"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="../assets/images/section-index/intro-3.jpg"
+                                class="d-block w-100"
+                                alt="Carousel Foto 3"
+                            />
+                        </div>
+                    </div>
 
-                <h2>Psicóloga (UBA)</h2>
+                    <!--Flecha Anterior-->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <!--Flecha Siguiente-->
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="index-info">
+                    <h1>Daniela Effron</h1>
+
+                    <div class="info-h2">
+                        <h2>
+                            <i class="bi bi-heart-fill"></i> Hablemos de lo que
+                            sentimos.
+                        </h2>
+                        <h2>
+                            <i class="bi bi-heart-fill"></i> Acompaño
+                            maternidades y decisiones.
+                        </h2>
+                    </div>
+
+                    <p>
+                        "No dejamos de existir. Más bien renacemos junto a este
+                        nuevo ser que está por llegar... <br />
+                        Y nos descubrimos en un nuevo rol."
+                    </p>
+                </div>
             </div>
         </main>
 
