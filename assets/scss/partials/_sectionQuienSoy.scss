@@ -55,25 +55,28 @@
     }
 }
 
+/*
 .quien-soy {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
-
-    p {
-        padding: 0 20px;
-    }
 }
+*/
 
 .container-quien-soy {
     width: 80%;
-    height: 440px;
-    background: url("../images/section-about-me/about-me.jpg");
+    //768px;
+    /*background: url("../images/section-quien-soy/flyer.jpg");
     background-repeat: no-repeat;
     background-size: cover; //Se adapta al tamaño de la pantalla
-
+    */
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .quien-soy-icons {

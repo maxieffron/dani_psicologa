@@ -1,22 +1,53 @@
 /* ------ PREGUNTAS FRECUENTES ------*/
 
-.container-services {
+.container-faq {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
 }
 
 /* Servicios */
-.container-services-info {
+.container-faq-info {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding: 20px 0 40px 0; //top-right-bottom-left
+    width: 90%;
 }
 
-.services-description {
-    padding-bottom: 20px;
+.container-faq-questions {
+    width: 80%;
+    margin-bottom: 30px;
 }
 
-.services-data {
+.accordion-header {
+    border: none;
+}
+
+.accordion-item {
+    border: none;
+    button {
+        color: $font-color-primary;
+        font-weight: $font-weight-600;
+        //background-color: red;
+        font-size: 18px;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+//Flechita del ítem
+.accordion-button::after {
+    background-color: $secondary-color;
+}
+
+//La pregunta seleccionada
+.accordion-button:not(.collapsed) {
+    color: $secondary-color;
+}
+
+/*
+.faq-data {
     width: 30%;
     height: 500px;
     border: map-get($borderShadow, borde);
@@ -36,3 +67,4 @@
         padding: 0 20px;
     }
 }
+*/

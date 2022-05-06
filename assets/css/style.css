@@ -35,8 +35,12 @@ h1 {
 }
 
 .description p {
-  width: 80%;
+  /*width: 80%;*/
   margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* ------ flecha para volver arriba ------ */
@@ -48,7 +52,7 @@ h1 {
   border-radius: 26px;
   right: 15px;
   bottom: 60px;
-  background: #aaebe7;
+  background: #d9ada0;
   transition: display 0.5s ease-in-out;
   z-index: 994;
 }
@@ -149,7 +153,7 @@ nav {
 .index-info {
   width: 100%;
   height: 450px;
-  background: url("../images/section-index/fondo-index.jpg") #aaebe7;
+  background: url("../images/section-index/fondo-index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /*background-attachment: fixed;*/
@@ -248,26 +252,26 @@ nav {
   font-weight: 600;
 }
 
+/*
 .quien-soy {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+    @include DisplayFlex(flex, row, wrap);
+    justify-content: space-evenly;
 }
-
-.quien-soy p {
-  padding: 0 20px;
-}
-
+*/
 .container-quien-soy {
   width: 80%;
-  height: 440px;
-  background: url("../images/section-about-me/about-me.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*background: url("../images/section-quien-soy/flyer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; //Se adapta al tamaño de la pantalla
+    */
   border: 1px solid #000000;
   border-radius: 6px;
   box-shadow: 3px 3px 6px 2px black;
+}
+
+.container-quien-soy img {
+  width: 100%;
+  height: auto;
 }
 
 .quien-soy-icons {
@@ -353,7 +357,7 @@ nav {
 }
 
 /* ------ PREGUNTAS FRECUENTES ------*/
-.container-services {
+.container-faq {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -361,38 +365,68 @@ nav {
 }
 
 /* Servicios */
-.container-services-info {
+.container-faq-info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px 0 40px 0;
+  width: 90%;
 }
 
-.services-description {
-  padding-bottom: 20px;
+.container-faq-questions {
+  width: 80%;
+  margin-bottom: 30px;
 }
 
-.services-data {
-  width: 30%;
-  height: 500px;
-  border: 1px solid #000000;
-  border-radius: 6px;
-  box-shadow: 3px 3px 6px 2px black;
-  background: url("../images/section-servicios/servicios.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.accordion-header {
+  border: none;
 }
 
-.services-data h3 {
-  text-align: center;
-  padding: 10px 0;
+.accordion-item {
+  border: none;
 }
 
-.services-data p {
-  padding: 0 20px;
+.accordion-item button {
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
 }
 
+.accordion-item button:hover {
+  color: #d9ada0;
+}
+
+.accordion-button::after {
+  background-color: #d9ada0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #d9ada0;
+}
+
+/*
+.faq-data {
+    width: 30%;
+    height: 500px;
+    border: map-get($borderShadow, borde);
+    border-radius: map-get($borderShadow, radio);
+    box-shadow: map-get($borderShadow, sombra);
+
+    background: url("../images/section-servicios/servicios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; //Se adapta al tamaño de la pantalla
+
+    h3 {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    p {
+        padding: 0 20px;
+    }
+}
+*/
 /* ------ CONTACTO ------*/
 .container-contacto {
   display: flex;
@@ -407,10 +441,6 @@ nav {
 
 .contacto-description {
   padding-bottom: 20px;
-}
-
-.contacto-description p {
-  width: 100%;
 }
 
 /* INFORMACIÓN */

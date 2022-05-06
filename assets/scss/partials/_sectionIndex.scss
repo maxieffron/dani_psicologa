@@ -18,7 +18,7 @@
     //Significa que si no existe la foto, se mostrará el color de fondo
     //Cuando especifico una ruta relativa, siempre debemos tener en cuenta la ubicación del archivo style.css
     //y no partir de la ubicación de este archivo SASS.
-    background: url("../images/section-index/fondo-index.jpg") $tertiary-color;
+    background: url("../images/section-index/fondo-index.jpg");
     background-repeat: no-repeat;
     background-size: cover; //Se adapta al tamaño de la pantalla
     /*background-attachment: fixed;*/

@@ -33,8 +33,12 @@ h1 {
     }
 
     p {
-        width: 80%;
+        /*width: 80%;*/
         margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: map-get($subTitulo, size);
+        text-align: map-get($subTitulo, align);
+        font-weight: map-get($subTitulo, negrita);
     }
 }
 
@@ -47,7 +51,7 @@ h1 {
     border-radius: 26px;
     right: 15px;
     bottom: 60px;
-    background: $tertiary-color;
+    background: $secondary-color;
     transition: display 0.5s ease-in-out;
     z-index: 994;
 
