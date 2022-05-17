@@ -39,6 +39,7 @@ h1 {
         font-size: map-get($subTitulo, size);
         text-align: map-get($subTitulo, align);
         font-weight: map-get($subTitulo, negrita);
+        color: $font-color-primary;
     }
 }
 

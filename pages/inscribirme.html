@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="../assets/css/style.css" />
 
-        <title>Contacto</title>
+        <title>Inscripción</title>
     </head>
     <body>
         <header>
@@ -45,7 +45,7 @@
 
                             <li class="nav-item">
                                 <a class="active" href="contacto.html"
-                                    >Contacto</a
+                                    >Inscribirme</a
                                 >
                             </li>
                         </ul>
@@ -57,37 +57,11 @@
         <main>
             <div class="container-contacto">
                 <section class="description contacto-description">
-                    <h1>Contacto</h1>
+                    <h1>Inscripción</h1>
                     <p>
-                        Si queres recibir novedades de nuevos tips y noticias o
-                        nos queres hacer una consulta, escribinos y en breve nos
-                        vamos a poner en contacto con vos.
+                        Para inscribirte al taller completá el formulario con tus datos. Luego de unos segundos la página te direccionará a Mercado pago.
                     </p>
                 </section>
-
-                <div class="container-contacto-info">
-                    <div class="contacto-info">
-                        <i class="bi bi-telephone"></i>
-                        <h3><span> Teléfono:</span> +54 11 6 512 0203</h3>
-                    </div>
-
-                    <div class="contacto-info">
-                        <i class="bi bi-stopwatch"></i>
-                        <h3>
-                            <span> Horarios:</span> Lunes a Viernes de 9 a 18 hs
-                        </h3>
-                    </div>
-
-                    <div class="contacto-info">
-                        <i class="bi bi-envelope"></i>
-                        <h3><span> Email:</span> licdanielaeffron@gmail.com</h3>
-                    </div>
-
-                    <div class="contacto-info">
-                        <i class="bi bi-instagram"></i>
-                        <h3><span> Instagram:</span> Nacer con otro ser</h3>
-                    </div>
-                </div>
 
                 <div class="container-contacto-form">
                     <form action="">
@@ -125,23 +99,17 @@
                                 />
                             </div>
 
-                            <!--Asunto-->
+                            <!--Inscribirme-->
                             <div class="form-control_field subject">
-                                <select
-                                    name="subject"
-                                    id=""
-                                    required
-                                    tabindex="4"
-                                >
-                                    <option
-                                        value="consulta"
-                                        selected="selected"
-                                    >
-                                        Consulta
-                                    </option>
+                                    <input
+                                    type="input"
+                                    name="inscripcion"
+                                    placeholder="inscribirme"
+                                    disabled
+                                    tabindex="4">
+                                    </input>
 
-                                    <option value="Otro">otro</option>
-                                </select>
+                                   
                             </div>
 
                             <!--Mensaje-->
@@ -152,7 +120,6 @@
                                     cols="30"
                                     rows="10"
                                     placeholder="Mensaje"
-                                    required
                                     tabindex="5"
                                 ></textarea>
                             </div>
@@ -164,11 +131,37 @@
                                 </button>
 
                                 <button type="submit" tabindex="7">
-                                    Enviar
+                                    Inscribirme
                                 </button>
                             </div>
                         </div>
                     </form>
+                </div>
+
+                <div class="container-contacto-info">
+                    <div class="contacto-info">
+                        <i class="bi bi-telephone"></i>
+                        <h3><span> Teléfono:</span> +54 11 6 512 0203</h3>
+                    </div>
+
+                    <!--
+                    <div class="contacto-info">
+                        <i class="bi bi-stopwatch"></i>
+                        <h3>
+                            <span> Horarios:</span> Lunes a Viernes de 9 a 18 hs
+                        </h3>
+                    </div>
+                    -->
+
+                    <div class="contacto-info">
+                        <i class="bi bi-envelope"></i>
+                        <h3><span> Email:</span> licdanielaeffron@gmail.com</h3>
+                    </div>
+
+                    <div class="contacto-info">
+                        <i class="bi bi-instagram"></i>
+                        <h3><span> Instagram:</span> Nacer con otro ser</h3>
+                    </div>
                 </div>
             </div>
         </main>

@@ -1,10 +1,10 @@
-/* ------ CONTACTO ------*/
+/* ------ INSCRIBIRME ------*/
 
 .container-contacto {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding: 10px 30px 40px;
-    background-image: url("../images/section-contacto/contacto.jpg");
+    //background-image: url("../images/section-contacto/contacto.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,10 +15,11 @@
 
 /* INFORMACIÓN */
 .container-contacto-info {
-    width: 40%;
+    width: 30%;
     height: 360px;
     justify-content: left;
     background-color: #ffffff;
+
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
@@ -57,9 +58,10 @@
 /* FORMULARIO */
 
 .container-contacto-form {
-    width: 656px;
+    width: 856px;
     height: 360px;
     background-color: #ffffff;
+
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
@@ -129,7 +131,7 @@
     margin-top: 13px;
 
     button {
-        width: 80px;
+        width: 100px;
         margin: 0 30px;
         background-color: $secondary-color;
 

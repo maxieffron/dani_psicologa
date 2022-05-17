@@ -41,6 +41,7 @@ h1 {
   font-size: 22px;
   text-align: center;
   font-weight: 600;
+  color: #8c8c8c;
 }
 
 /* ------ flecha para volver arriba ------ */
@@ -125,7 +126,7 @@ nav {
   padding: 16px;
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
+  color: #8c8c8c;
   text-align: center;
 }
 
@@ -140,6 +141,15 @@ nav {
 }
 
 /* ------ INDEX ------*/
+.container-index {
+  width: 100%;
+  /*height: 450px;*/
+  background: url("../images/section-index/fondo-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
 /* Carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -150,20 +160,23 @@ nav {
   border-radius: 50%;
 }
 
-.index-info {
-  width: 100%;
-  height: 450px;
-  background: url("../images/section-index/fondo-index.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-attachment: fixed;*/
-}
-
 .index-info h1 {
   color: #c4c4c4;
   text-transform: capitalize;
   font-weight: 600;
   margin: 30px 0;
+}
+
+.index-info h2 {
+  /*display: inline-block;*/
+  /*font-weight: $font-weight-600;*/
+  /*width: 60%;*/
+  /*border: 1px solid green;*/
+  text-align: center;
+  margin: 0 auto;
+  color: #8c8c8c;
+  /*left: 0;
+        right: 0;*/
 }
 
 .index-info p {
@@ -172,24 +185,18 @@ nav {
   font-size: 22px;
 }
 
+/*
 .info-h2 {
-  position: relative;
-  width: 600px;
-  height: 100px;
-  /*margin-left: 25%;*/
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    width: 600px;
 
-.info-h2 h2 {
-  /*display: inline-block;*/
-  font-weight: 600;
-  /*padding-bottom: 20px;*/
-  /*border: 1px solid red;*/
-  text-align: justify;
-}
+    margin: 0 auto;
 
+    left: 0;
+    right: 0;
+}*/
 /* ------ QUIÉN SOY ------*/
 .container-principal {
   display: flex;
@@ -315,9 +322,11 @@ nav {
   justify-content: center;
   align-content: flex-start;
   background-color: #c4c4c4;
-  border: 1px solid #000000;
-  border-radius: 6px;
-  box-shadow: 3px 3px 6px 2px black;
+  /*
+    border: map-get($borderShadow, borde);
+    border-radius: map-get($borderShadow, radio);
+    box-shadow: map-get($borderShadow, sombra);
+    */
 }
 
 .icon-exp-data {
@@ -388,7 +397,7 @@ nav {
 }
 
 .accordion-item button {
-  color: #000000;
+  color: #8c8c8c;
   font-weight: 600;
   font-size: 18px;
 }
@@ -427,14 +436,13 @@ nav {
     }
 }
 */
-/* ------ CONTACTO ------*/
+/* ------ INSCRIBIRME ------*/
 .container-contacto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10px 30px 40px;
-  background-image: url("../images/section-contacto/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -445,7 +453,7 @@ nav {
 
 /* INFORMACIÓN */
 .container-contacto-info {
-  width: 40%;
+  width: 30%;
   height: 360px;
   justify-content: left;
   background-color: #ffffff;
@@ -488,7 +496,7 @@ nav {
 
 /* FORMULARIO */
 .container-contacto-form {
-  width: 656px;
+  width: 856px;
   height: 360px;
   background-color: #ffffff;
   border: 1px solid #000000;
@@ -565,7 +573,7 @@ nav {
 }
 
 .buttons button {
-  width: 80px;
+  width: 100px;
   margin: 0 30px;
   background-color: #d9ada0;
 }
