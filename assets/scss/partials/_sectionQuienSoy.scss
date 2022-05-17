@@ -7,72 +7,17 @@
     padding: 40px 0;
 }
 
-.profile {
-    @include DisplayFlex(flex, row, wrap);
-    justify-content: center;
-}
-
-.container-profile {
-    @include DisplayFlex(flex, row, wrap);
-    justify-content: space-evenly;
-
-    width: 80%;
-    height: 440px;
-    background: url("../images/section-about-me/about-me.jpg") $secondary-color;
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-}
-
-.photo-profile {
-    width: 80%;
-    height: 40%;
-    margin: auto;
-
-    img {
-        /*padding-top: 20px;*/
-        width: 40%;
-        height: auto;
-        margin-left: 30%;
-        /*max-width: 243px;
-        max-height: 210px;
-        */
-    }
-}
-
-.data-profile {
-    width: 70%;
-    height: 45%;
-    padding-top: 10px;
-
-    h3 {
-        font-size: 18px;
-        span {
-            font-weight: $font-weight-600;
-        }
-    }
-}
-
-/*
-.quien-soy {
-    @include DisplayFlex(flex, row, wrap);
-    justify-content: space-evenly;
-}
-*/
-
 .container-quien-soy {
-    width: 80%;
-    //768px;
-    /*background: url("../images/section-quien-soy/flyer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
+    width: 70%;
+    /*border: map-get($borderShadow, borde);
+    border-radius: 12px;
+    overflow: hidden; //Oculto los sobrantes de la imágen, para que no desborde
     */
-    border: map-get($borderShadow, borde);
+
+    /*
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
-
+*/
     img {
         width: 100%;
         height: auto;

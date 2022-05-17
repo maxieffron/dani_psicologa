@@ -4,7 +4,7 @@
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding: 10px 30px 40px;
-    //background-image: url("../images/section-contacto/contacto.jpg");
+    //background-image: url("../images/wallpaper_nav-footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,9 +20,15 @@
     justify-content: left;
     background-color: #ffffff;
 
+    background-image: url("../images/wallpaper_nav-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
+    */
 }
 
 .contacto-info {
@@ -60,11 +66,16 @@
 .container-contacto-form {
     width: 856px;
     height: 360px;
-    background-color: #ffffff;
+    //background-color: #ffffff;
+    background-image: url("../images/wallpaper_nav-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    /*
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
+    */
 
     form {
         width: 100%;
@@ -87,7 +98,8 @@
         padding: 3px;
         font-size: 18px;
         border-radius: 3px;
-        border: 1px solid #000000;
+        //border: 1px solid #000000;
+        border: none;
     }
 
     input,
