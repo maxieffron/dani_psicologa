@@ -22,24 +22,31 @@ h2 {
 }
 
 h1 {
-    color: $secondary-color;
+    color: $primary-color;
     text-transform: uppercase;
     font-weight: $font-weight-700;
 }
 
+h2 {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-weight: $font-weight-600;
+}
+
 .description {
+    padding-top: 96px;
+
     h1 {
         padding-top: 10px;
     }
 
     p {
-        /*width: 80%;*/
         margin: 0 auto;
         padding-bottom: 20px;
+        color: $font-color-primary;
         font-size: map-get($subTitulo, size);
         text-align: map-get($subTitulo, align);
         font-weight: map-get($subTitulo, negrita);
-        color: $font-color-primary;
     }
 }
 

@@ -14,6 +14,8 @@
     /*background-attachment: fixed;*/
 
     //border: 1px solid red;
+
+    margin-top: 94px;
 }
 
 /* Carousel */
@@ -33,7 +35,6 @@
     //height: 250px;
 
     h1 {
-        color: $primary-color;
         text-transform: capitalize;
         margin: 30px 0;
     }
@@ -42,7 +43,7 @@
         /*font-weight: $font-weight-600;*/
         /*width: 60%;*/
         /*border: 1px solid green;*/
-        text-align: center;
+        /*text-align: center;*/
         margin: 0 auto;
         color: $font-color-primary;
         /*left: 0;
@@ -54,16 +55,3 @@
         font-size: 22px;
     }
 }
-
-/*
-.info-h2 {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid green;
-    width: 600px;
-
-    margin: 0 auto;
-
-    left: 0;
-    right: 0;
-}*/

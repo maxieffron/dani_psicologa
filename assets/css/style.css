@@ -25,9 +25,19 @@ h2 {
 }
 
 h1 {
-  color: #d9ada0;
+  color: #c4c4c4;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+h2 {
+  color: #d9ada0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.description {
+  padding-top: 96px;
 }
 
 .description h1 {
@@ -35,13 +45,12 @@ h1 {
 }
 
 .description p {
-  /*width: 80%;*/
   margin: 0 auto;
   padding-bottom: 20px;
+  color: #8c8c8c;
   font-size: 22px;
   text-align: center;
   font-weight: 600;
-  color: #8c8c8c;
 }
 
 /* ------ flecha para volver arriba ------ */
@@ -150,6 +159,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover; //Se adapta al tamaño de la pantalla*/
   /*background-attachment: fixed;*/
+  margin-top: 94px;
 }
 
 /* Carousel */
@@ -163,7 +173,6 @@ nav {
 }
 
 .index-info h1 {
-  color: #c4c4c4;
   text-transform: capitalize;
   margin: 30px 0;
 }
@@ -173,7 +182,7 @@ nav {
   /*font-weight: $font-weight-600;*/
   /*width: 60%;*/
   /*border: 1px solid green;*/
-  text-align: center;
+  /*text-align: center;*/
   margin: 0 auto;
   color: #8c8c8c;
   /*left: 0;
@@ -186,29 +195,25 @@ nav {
   font-size: 22px;
 }
 
-/*
-.info-h2 {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid green;
-    width: 600px;
-
-    margin: 0 auto;
-
-    left: 0;
-    right: 0;
-}*/
 /* ------ QUIÉN SOY ------*/
-.container-principal {
+.container-quien-soy {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   /*align-items: center;*/
-  padding: 40px 0;
 }
 
-.container-quien-soy {
+.container-quien-soy h2 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.container-quien-soy .description {
+  width: 70%;
+}
+
+.container-flyer {
   width: 70%;
   /*border: map-get($borderShadow, borde);
     border-radius: 12px;
@@ -220,7 +225,7 @@ nav {
 */
 }
 
-.container-quien-soy img {
+.container-flyer img {
   width: 100%;
   height: auto;
 }
@@ -240,15 +245,14 @@ nav {
 }
 
 /* ------ MI TALLER ------*/
-.container-formacion {
+.container-mi-taller {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 40px 0;
 }
 
-.experience {
+.container-folleto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -257,7 +261,7 @@ nav {
   padding: 50px 0px;
 }
 
-.exp-data {
+.folleto {
   width: 90%;
   height: 100%;
   display: flex;
@@ -273,7 +277,7 @@ nav {
     */
 }
 
-.icon-exp-data {
+.icon-folleto {
   position: relative;
   width: 140px;
   height: 140px;
@@ -284,7 +288,7 @@ nav {
   margin-top: -70px;
 }
 
-.icon-exp-data i {
+.icon-folleto i {
   display: inline-block;
   font-size: 70px;
   color: #d9ada0;
@@ -292,11 +296,11 @@ nav {
   padding-top: 20px;
 }
 
-.icon-exp-data i:hover {
+.icon-folleto i:hover {
   color: #ffffff;
 }
 
-.icon-exp-data:hover {
+.icon-folleto:hover {
   background-color: #c4c4c4;
 }
 
@@ -315,16 +319,6 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-/* Servicios */
-.container-faq-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 20px 0 40px 0;
-  width: 90%;
 }
 
 .container-faq-questions {

@@ -17,7 +17,7 @@
         <title>Daniela Effron</title>
     </head>
     <body>
-        <header>
+        <header class="fixed-top">
             <!-- Barra de Navegación-->
             <nav>
                 <div class="menu-container">
@@ -28,25 +28,25 @@
                     <div class="menu-nav_bar">
                         <ul>
                             <li class="nav-item">
-                                <a class="active" href="index.html">Inicio</a>
+                                <a href="#inicio">Inicio</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/quienSoy.html">¿Quién Soy?</a>
+                                <a href="#quien-soy">¿Quién Soy?</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/miTaller.html">Mi Taller</a>
+                                <a href="#mi-taller">Mi Taller</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/faq.html"
+                                <a href="#faq"
                                     >Preguntas Frecuentes</a
                                 >
                             </li>
 
                             <li class="nav-item">
-                                <a href="pages/inscribirme.html">Inscribirme</a>
+                                <a href="#inscribirme">Inscribirme</a>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +55,8 @@
         </header>
 
         <main>
-            <div class="container-index">
+            <!-- ****** INDEX ****** -->
+            <div id="inicio" class="container-index">
                 <!-- Carousel-->
                 <div
                     id="carouselExampleIndicators"
@@ -188,6 +189,424 @@
                     </p>
                 </div>
             </div>
+
+            <!-- ****** QUIÉN SOY ****** -->
+            <div id="quien-soy" class="container-quien-soy">
+
+                <section class="description">
+                <h2>
+                
+                    <i class="bi bi-heart-fill"></i>
+                </h2>
+                </section>
+
+                <div class="container-flyer">
+                    <img
+                        src="assets/images/section-quien-soy/flyer.jpg"
+                        alt=""
+                    />
+                </div>
+
+                <div class="quien-soy-icons">
+                    <img
+                        src="assets/images/section-quien-soy/quien-soy-iconos.jpg"
+                        alt="Quién Soy - Iconos"
+                    />
+                </div>
+            </div>
+
+            <!-- ****** MI TALLER ****** -->
+            <div id="mi-taller" class="container-mi-taller">
+                <section class="description">
+                    <h2>Mi Taller</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores placeat quis officiis consequatur neque
+                        officia quo perferendis labore debitis beatae, nihil
+                        iste eveniet consequuntur et, nulla aliquid recusandae!
+                        Illo, asperiores? Vitae nobis suscipit delectus, sed
+                        vero corrupti harum obcaecati. Officia est, cupiditate
+                        minus ipsam nemo beatae, modi dolorem eum hic ipsum
+                        maiores illo nesciunt placeat quos asperiores tempore
+                        illum tempora.
+                    </p>
+                </section>
+
+                <!-- Folleto Izquierda -->
+                <div class="container-folleto col-12 col-lg-4">
+                    <div class="folleto">
+                        <div class="icon-folleto">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+
+                        <div class="info-formacion"></div>
+                    </div>
+                </div>
+
+                <!-- Folleto del Medio -->
+                <div class="container-folleto col-12 col-lg-4">
+                    <div class="folleto">
+                        <div class="icon-folleto">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        <div class="info-formacion"></div>
+                    </div>
+                </div>
+
+                <!-- Folleto Derecha -->
+                <div class="container-folleto col-12 col-lg-4">
+                    <div class="folleto">
+                        <div class="icon-folleto">
+                            <i class="bi bi-book"></i>
+                        </div>
+
+                        <div class="info-formacion"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****** PREGUNTAS FRECUENTES ****** -->
+            <div id="faq" class="container-faq">
+                
+                    <section class="description">
+                        <h2>Preguntas Frecuentes</h2>
+                        <p>
+                            Acá te voy a responder las consultas más frecuentes
+                            que recibo.
+                        </p>
+                    </section>
+                
+
+                <div
+                    class="container-faq-questions accordion"
+                    id="accordionExample"
+                >
+                    <!-- Pregunta Nº1 -->
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                ¿A quién está dirigido el taller?
+                            </button>
+                        </h3>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <p>
+                                    Este taller está dirigido a mujeres madres,
+                                    que estén atravesando o hayan atravesado un
+                                    puerperio “reciente”. También para aquellas
+                                    mujeres madres que la propuesta las
+                                    interpele y decidan ser parte de esta
+                                    aventura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta Nº2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                            >
+                                ¿Necesito algún conocimiento previo?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <p>
+                                    Ninguno. Solo es necesario dejarse llevar.
+                                    Con un celu o una compu es suficiente para
+                                    ver la propuesta. Luego para escribir te
+                                    recomiendo un cuaderno o papel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta Nº3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                            >
+                                ¿Qué van a encontrar en este taller?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <p>
+                                    El taller de escritura terapéutica es un
+                                    espacio de encuentro con otras mujeres y con
+                                    vos misma. A través de consignas
+                                    disparadoras te propongo reflexionar sobre
+                                    tu propia maternidad, repensarte,
+                                    reencontrarte y reconocerte. Tomar
+                                    consciencia del período que estás
+                                    transitando y ordenar algunos pensamientos.
+                                    Luego, en un marco de mucho respeto te
+                                    invito a compartir lo que escribas formando
+                                    una pequeña tribu, intercambiando miradas,
+                                    acompañándose entre ustedes.
+                                </p>
+
+                                <p>
+                                    La propuesta es totalmente virtual para que
+                                    la hagas a tu ritmo y tu tiempo. recibirás
+                                    los videos divididos en cuatro encuentros y
+                                    allí mismo encontrarás los ejercicios que te
+                                    propongo para comenzar a escribir. También
+                                    comparto algunos textos míos, y dejo
+                                    preguntas abiertas para pensar juntas.
+                                </p>
+
+                                <p>
+                                    Finalmente habrá un encuentro sincrónico a
+                                    través de Zoom, de caracter optativo. Podes
+                                    sumarte, y solo escuchar, o si te animas
+                                    podes compartir algo de lo que escribiste,
+                                    sentiste, descubriste en el proceso de
+                                    escritura con otras participantes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta Nº4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour"
+                            >
+                                ¿Cómo me anoto?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <br>
+                                <p>
+                                    Te podes anotar haciendo click
+                                    <a href="inscribirme.html"> aquí </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta Nº5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive"
+                                aria-expanded="false"
+                                aria-controls="collapseFive"
+                            >
+                                ¿Cuánto vale y qué medios de pagos hay?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseFive"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <p>
+                                    El valor del taller es de $2.000 pesos
+                                    argentinos. <br />
+                                    Se puede pagar por transferencia bancaria o
+                                    Mercado pago.
+                                </p>
+
+                                <p>
+                                    Si no sos de Argentina,  contactate conmigo por acá: </br>
+                                    Instagram: nacer.con.otro.ser
+                                    <br />
+                                    whatsapp: 15-65120203 <br />
+                                    Mail: danielaeffron@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****** INSCRIBIRME ****** -->
+            <div id="inscribirme" class="container-contacto">
+                <section class="description contacto-description">
+                    <h2>Inscripción</h2>
+                    <p>
+                        Para inscribirte al taller completá el formulario con
+                        tus datos. Luego de unos segundos la página te
+                        direccionará a Mercado pago.
+                    </p>
+                </section>
+
+                <div class="container-contacto-form">
+                    <form action="">
+                        <div class="form-fields">
+                            <!--Nombre-->
+                            <div class="form-control_field name">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Nombre y Apellido"
+                                    required
+                                    tabindex="1"
+                                />
+                            </div>
+
+                            <!--Teléfono-->
+                            <div class="form-control_field phone">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Teléfono"
+                                    required
+                                    tabindex="2"
+                                />
+                            </div>
+
+                            <!--Email-->
+                            <div class="form-control_field email">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                    tabindex="3"
+                                />
+                            </div>
+
+                            <div class="form-control_field country">
+                                <input
+                                    type="radio"
+                                    id="argentina"
+                                    name="pais"
+                                    value="Argentina"
+                                    tabindex="4"
+                                />
+                                <label for="argentina">Argentina</label><br />
+                                <input
+                                    type="radio"
+                                    id="otro"
+                                    name="pais"
+                                    value="Otro"
+                                    tabindex="5"
+                                />
+                                <label for="otro">Otro</label><br />
+                            </div>
+
+                            <!--Inscribirme
+                            <div class="form-control_field subject">
+                                    <input
+                                    type="input"
+                                    name="inscripcion"
+                                    placeholder="inscribirme"
+                                    disabled
+                                    tabindex="4">
+                                    </input>
+
+                                   
+                            </div>
+                            -->
+
+                            <!--Mensaje-->
+                            <div class="form-control_field message">
+                                <textarea
+                                    name="message"
+                                    id=""
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Mensaje"
+                                    tabindex="6"
+                                ></textarea>
+                            </div>
+
+                            <!--Botones-->
+                            <div class="form-control_field buttons">
+                                <button type="reset" tabindex="7">
+                                    Borrar
+                                </button>
+
+                                <button type="submit" tabindex="8">
+                                    Inscribirme
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container-contacto-info">
+                    <div class="contacto-info">
+                        <i class="bi bi-telephone"></i>
+                        <h3><span> Teléfono:</span> +54 11 6 512 0203</h3>
+                    </div>
+
+                    <!--
+                    <div class="contacto-info">
+                        <i class="bi bi-stopwatch"></i>
+                        <h3>
+                            <span> Horarios:</span> Lunes a Viernes de 9 a 18 hs
+                        </h3>
+                    </div>
+                    -->
+
+                    <div class="contacto-info">
+                        <i class="bi bi-envelope"></i>
+                        <h3><span> Email:</span> licdanielaeffron@gmail.com</h3>
+                    </div>
+
+                    <div class="contacto-info">
+                        <i class="bi bi-instagram"></i>
+                        <h3><span> Instagram:</span> Nacer con otro ser</h3>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <!-- FLECHA -->
