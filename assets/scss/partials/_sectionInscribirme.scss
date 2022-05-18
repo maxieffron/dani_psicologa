@@ -64,7 +64,8 @@
 /* FORMULARIO */
 
 .container-contacto-form {
-    width: 856px;
+    /*width: 856px;*/
+    width: 60%;
     height: 360px;
     //background-color: #ffffff;
     background-image: url("../images/wallpaper_nav-footer.jpg");
@@ -76,6 +77,8 @@
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
     */
+
+    margin-bottom: 20px;
 
     form {
         width: 100%;
@@ -128,7 +131,7 @@
 .name,
 .phone,
 .email,
-.subject {
+.nationality {
     width: 45%;
 }
 

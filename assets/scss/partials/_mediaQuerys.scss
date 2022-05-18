@@ -1,6 +1,6 @@
 /* RESPONSIVE */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     //CONTACTO
     .container-contacto {
         @include DisplayFlex(flex, column, wrap);
@@ -20,8 +20,9 @@
         width: 70%;
     }
 }
-
+/*
 @media screen and (max-width: 992px) {
+    
     //SOBRE MI
     .profile {
         margin: 20px 0;
@@ -33,15 +34,19 @@
         height: 400px;
         margin: 20px 0;
     }
+    
 }
+*/
 
 @media screen and (max-width: 768px) {
+    /*
     //SERVICIOS
     .services-data {
         width: 60%;
         height: 500px;
         margin: 20px 0;
     }
+    */
 
     //CONTACTO
     .container-contacto-info {
@@ -64,17 +69,20 @@
 }
 
 @media screen and (max-width: 576px) {
+    /*
     //FORMACIÓN
     .experience {
         height: 720px;
     }
 
+    
     //SERVICIOS
     .services-data {
         width: 60%;
         height: 650px;
         margin: 20px 0;
     }
+    */
 
     //CONTACTO
 
@@ -88,7 +96,7 @@
         .name,
         .phone,
         .email,
-        .subject {
+        .nationality {
             width: 93%;
         }
 
@@ -128,12 +136,14 @@
 }
 
 @media screen and (max-width: 430px) {
+    /*
     //SERVICIOS
     .services-data {
         width: 60%;
         height: 750px;
         margin: 20px 0;
     }
+    */
 
     //CONTACTO
     .container-contacto-info {
@@ -173,7 +183,7 @@
             font-size: 12px;
         }
         h3 {
-            font-size: 10px;
+            font-size: 9px;
             padding-top: 10px;
         }
     }

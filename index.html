@@ -218,7 +218,7 @@
             <!-- ****** MI TALLER ****** -->
             <div id="mi-taller" class="container-mi-taller">
                 <section class="description">
-                    <h2>Mi Taller</h2>
+                    <!--<h2>Mi Taller</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores placeat quis officiis consequatur neque
@@ -230,37 +230,45 @@
                         maiores illo nesciunt placeat quos asperiores tempore
                         illum tempora.
                     </p>
+                -->
+
+                <img src="assets/images/section-mi-taller/taller-portada.jpg" class="image-portada" alt="Portada de Mi Taller">
                 </section>
 
                 <!-- Folleto Izquierda -->
-                <div class="container-folleto col-12 col-lg-4">
+                <div class="container-folleto col-12 col-md-6 col-lg-4">
                     <div class="folleto">
                         <div class="icon-folleto">
                             <i class="bi bi-mortarboard-fill"></i>
                         </div>
 
-                        <div class="info-formacion"></div>
+                        <img src="assets/images/section-mi-taller/flyer-izq.jpg" class="folleto-image" alt="Flyer 'Tiempos de Cambio'">
                     </div>
+                    
                 </div>
 
                 <!-- Folleto del Medio -->
-                <div class="container-folleto col-12 col-lg-4">
+                <div class="container-folleto col-12 col-md-6 col-lg-4">
+
                     <div class="folleto">
+                        
                         <div class="icon-folleto">
                             <i class="bi bi-mortarboard-fill"></i>
                         </div>
-                        <div class="info-formacion"></div>
+
+                        <img src="assets/images/section-mi-taller/flyer-medio.jpg" class="folleto-image" alt="Flyer 'A puño y letra'">
+                       
                     </div>
                 </div>
 
                 <!-- Folleto Derecha -->
-                <div class="container-folleto col-12 col-lg-4">
+                <div class="container-folleto col-12 col-md-6 col-lg-4">
                     <div class="folleto">
                         <div class="icon-folleto">
                             <i class="bi bi-book"></i>
                         </div>
 
-                        <div class="info-formacion"></div>
+                        <img src="assets/images/section-mi-taller/flyer-der.jpg" class="folleto-image" alt="Flyer 'Preguntas Frecuentes'">
                     </div>
                 </div>
             </div>
@@ -521,6 +529,7 @@
                                 />
                             </div>
 
+                            <!--
                             <div class="form-control_field country">
                                 <input
                                     type="radio"
@@ -539,20 +548,20 @@
                                 />
                                 <label for="otro">Otro</label><br />
                             </div>
-
-                            <!--Inscribirme
-                            <div class="form-control_field subject">
-                                    <input
-                                    type="input"
-                                    name="inscripcion"
-                                    placeholder="inscribirme"
-                                    disabled
-                                    tabindex="4">
-                                    </input>
-
-                                   
-                            </div>
                             -->
+
+                            <!--Asunto-->
+                            <div class="form-control_field nationality">
+                                <select name="nationality" id="" required tabindex="4">
+                                    <option value="nacionalidad" selected="selected">
+                                        Nacionalidad
+                                    </option>
+
+                                    <option value="Argentina">Argentina</option>
+
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
 
                             <!--Mensaje-->
                             <div class="form-control_field message">
@@ -562,17 +571,17 @@
                                     cols="30"
                                     rows="10"
                                     placeholder="Mensaje"
-                                    tabindex="6"
+                                    tabindex="5"
                                 ></textarea>
                             </div>
 
                             <!--Botones-->
                             <div class="form-control_field buttons">
-                                <button type="reset" tabindex="7">
+                                <button type="reset" tabindex="6">
                                     Borrar
                                 </button>
 
-                                <button type="submit" tabindex="8">
+                                <button type="submit" tabindex="7">
                                     Inscribirme
                                 </button>
                             </div>

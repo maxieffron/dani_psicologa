@@ -252,17 +252,32 @@ nav {
   justify-content: space-evenly;
 }
 
+.container-mi-taller .description {
+  width: 70%;
+  /*padding-top: 110px;
+        padding-bottom: 20px;*/
+}
+
 .container-folleto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 580px;
-  padding: 50px 0px;
+  height: 1000px;
+  padding: 80px 0px;
+}
+
+.image-portada {
+  display: block;
+  width: 80%;
+  height: auto;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .folleto {
-  width: 90%;
+  width: 96%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -278,9 +293,9 @@ nav {
 }
 
 .icon-folleto {
-  position: relative;
-  width: 140px;
-  height: 140px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
   display: inline-block;
   background-color: #ffffff;
   border: 6px solid #d9ada0;
@@ -290,10 +305,10 @@ nav {
 
 .icon-folleto i {
   display: inline-block;
-  font-size: 70px;
+  font-size: 46px;
   color: #d9ada0;
-  padding-left: 30px;
-  padding-top: 20px;
+  padding-left: 10px;
+  padding-top: 6px;
 }
 
 .icon-folleto i:hover {
@@ -302,6 +317,11 @@ nav {
 
 .icon-folleto:hover {
   background-color: #c4c4c4;
+}
+
+.folleto-image {
+  width: 100%;
+  height: 100%;
 }
 
 .info-formacion h3 {
@@ -439,7 +459,8 @@ nav {
 
 /* FORMULARIO */
 .container-contacto-form {
-  width: 856px;
+  /*width: 856px;*/
+  width: 60%;
   height: 360px;
   background-image: url("../images/wallpaper_nav-footer.jpg");
   background-repeat: no-repeat;
@@ -449,6 +470,7 @@ nav {
     border-radius: map-get($borderShadow, radio);
     box-shadow: map-get($borderShadow, sombra);
     */
+  margin-bottom: 20px;
 }
 
 .container-contacto-form form {
@@ -503,7 +525,7 @@ nav {
 .name,
 .phone,
 .email,
-.subject {
+.nationality {
   width: 45%;
 }
 
@@ -543,7 +565,7 @@ nav {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .container-contacto {
     display: flex;
     flex-direction: column;
@@ -563,23 +585,32 @@ nav {
   }
 }
 
+/*
 @media screen and (max-width: 992px) {
-  .profile {
-    margin: 20px 0;
-  }
-  .services-data {
-    width: 60%;
-    height: 400px;
-    margin: 20px 0;
-  }
-}
+    
+    //SOBRE MI
+    .profile {
+        margin: 20px 0;
+    }
 
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 400px;
+        margin: 20px 0;
+    }
+    
+}
+*/
 @media screen and (max-width: 768px) {
-  .services-data {
-    width: 60%;
-    height: 500px;
-    margin: 20px 0;
-  }
+  /*
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 500px;
+        margin: 20px 0;
+    }
+    */
   .container-contacto-info {
     width: 80%;
   }
@@ -597,14 +628,20 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
-  .experience {
-    height: 720px;
-  }
-  .services-data {
-    width: 60%;
-    height: 650px;
-    margin: 20px 0;
-  }
+  /*
+    //FORMACIÓN
+    .experience {
+        height: 720px;
+    }
+
+    
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 650px;
+        margin: 20px 0;
+    }
+    */
   .container-contacto-info {
     height: 320px;
   }
@@ -614,7 +651,7 @@ nav {
   .container-contacto-form .name,
   .container-contacto-form .phone,
   .container-contacto-form .email,
-  .container-contacto-form .subject {
+  .container-contacto-form .nationality {
     width: 93%;
   }
   .container-contacto-form .message {
@@ -648,11 +685,14 @@ nav {
 }
 
 @media screen and (max-width: 430px) {
-  .services-data {
-    width: 60%;
-    height: 750px;
-    margin: 20px 0;
-  }
+  /*
+    //SERVICIOS
+    .services-data {
+        width: 60%;
+        height: 750px;
+        margin: 20px 0;
+    }
+    */
   .container-contacto-info {
     height: 220px;
   }
@@ -686,7 +726,7 @@ nav {
     font-size: 12px;
   }
   .contacto-info h3 {
-    font-size: 10px;
+    font-size: 9px;
     padding-top: 10px;
   }
   .container-contacto-form {
