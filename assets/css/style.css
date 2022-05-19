@@ -226,21 +226,23 @@ nav {
 }
 
 .container-flyer img {
+  display: block;
   width: 80%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .quien-soy-icons {
   margin-top: 40px;
-  border: 1px solid green;
 }
 
 .quien-soy-icons img {
+  display: block;
   width: 60%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
 }
 
 .quien-soy-icons img:hover {
