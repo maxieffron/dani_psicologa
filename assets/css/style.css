@@ -306,22 +306,29 @@ nav {
   border: 6px solid #d9ada0;
   border-radius: 50%;
   margin-top: -70px;
+  /*
+    i {
+        display: inline-block;
+        font-size: 46px;
+        color: $secondary-color;
+        padding-left: 10px;
+        padding-top: 6px;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: $primary-color;
+    }
+    */
 }
 
-.icon-folleto i {
+.icon-folleto img {
   display: inline-block;
-  font-size: 46px;
-  color: #d9ada0;
-  padding-left: 10px;
-  padding-top: 6px;
-}
-
-.icon-folleto i:hover {
-  color: #ffffff;
-}
-
-.icon-folleto:hover {
-  background-color: #c4c4c4;
+  width: 100%;
+  height: auto;
 }
 
 .folleto-image {
