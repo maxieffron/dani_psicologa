@@ -26,19 +26,21 @@
     box-shadow: map-get($borderShadow, sombra);
 */
     img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 }
 
 .quien-soy-icons {
     margin-top: 40px;
-    /*border: 1px solid red;*/
+    border: 1px solid green;
 
     img {
-        width: 100%;
+        width: 60%;
         height: auto;
-
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid red;
         &:hover {
             background-image: url("../images/section-quien-soy/quien-soy-iconos_hover.jpg");
         }
