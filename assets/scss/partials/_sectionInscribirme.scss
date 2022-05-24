@@ -14,6 +14,7 @@
 }
 
 /* INFORMACIÓN */
+/*
 .container-contacto-info {
     width: 30%;
     height: 360px;
@@ -24,42 +25,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    /*
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-    */
+    
+    //border: map-get($borderShadow, borde);
+    //border-radius: map-get($borderShadow, radio);
+    //box-shadow: map-get($borderShadow, sombra);
+    
 }
-
-.contacto-info {
-    @include DisplayFlex(flex, row, wrap);
-
-    margin-left: 30px;
-    margin-top: 20px;
-
-    i {
-        width: 45px;
-        height: 45px;
-        background-color: $secondary-color;
-        border-radius: 50%;
-        display: inline-block;
-        font-size: 25px;
-        padding-left: 10px;
-        padding-top: 8px;
-        margin-left: -12px;
-        margin-top: 6px;
-    }
-
-    h3 {
-        display: inline;
-        padding-left: 6px;
-        padding-top: 18px;
-        font-size: 18px;
-        span {
-            font-weight: $font-weight-600;
-        }
-    }
-}
+*/
 
 /* FORMULARIO */
 

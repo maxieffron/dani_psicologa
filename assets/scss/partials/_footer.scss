@@ -1,9 +1,117 @@
 /* ------ FOOTER ------*/
 
-.footer-copyright {
+.container-footer {
     background: url("../images/wallpaper_nav-footer.jpg");
+    background-size: cover;
+
+    @include DisplayFlex(flex, row, wrap);
+
+    h4 {
+        text-align: center;
+        font-weight: $font-weight-600;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+}
+
+.footer-menu {
+    width: 40%;
+    height: 100%;
+    padding-top: 10px;
+
+    ul {
+        padding-left: 30px;
+    }
+    li {
+        //margin-left: 25px;
+
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 16px;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: $font-weight-600;
+        color: $font-color-primary;
+        text-align: center;
+
+        &:hover {
+            background-color: $secondary-color;
+            border-radius: 3px;
+        }
+    }
+}
+
+.footer-data {
+    width: 25%;
+    padding-top: 10px;
+    //background: inherit;
+
+    p {
+        padding-left: 30px;
+        span {
+            font-weight: $font-weight-600;
+        }
+    }
+}
+
+.footer-social_media {
+    width: 35%;
+    padding-top: 10px;
+
+    //border: 1px solid green;
+}
+
+.redes-sociales {
+    //border: 1px solid red;
+    margin-top: -10px;
+}
+
+//Iconos Email e Instagram
+.footer-info {
+    @include DisplayFlex(flex, row, wrap);
+
+    padding-left: 30px;
+    padding-bottom: 4px;
+
+    a {
+        color: black;
+    }
+    i {
+        width: 45px;
+        height: 45px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 25px;
+        padding-left: 10px;
+        padding-top: 8px;
+        margin-left: -12px;
+        margin-top: 6px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    p {
+        //display: inline;
+        padding-left: 6px;
+        padding-top: 18px;
+        //font-size: 18px;
+        span {
+            font-weight: $font-weight-600;
+        }
+    }
+}
+
+.footer-copyright {
     width: 100%;
     height: 60px;
+    background: url("../images/wallpaper_nav-footer.jpg");
     border-top: 3px solid $secondary-color;
     text-align: center;
     font-size: 16px;
