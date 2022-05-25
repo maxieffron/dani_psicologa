@@ -10,53 +10,55 @@
     margin-bottom: 30px;
 }
 
-.accordion-header {
+//Es el h3
+.faq-header {
+    background: none;
     border: none;
 }
 
-.accordion-item {
+//Es el div de las preguntas
+.faq-item {
     border: none;
-    button {
-        color: $font-color-primary;
-        font-weight: $font-weight-600;
-        //background-color: red;
-        font-size: 18px;
+}
 
-        &:hover {
-            color: $secondary-color;
-        }
+//Es el botón que tiene la flechita
+.faq-button {
+    color: $font-color-primary;
+    font-weight: $font-weight-600;
+    font-size: 18px;
+    border: none;
+    background: none;
+    box-shadow: none;
+
+    &:focus {
+        border: none;
+        box-shadow: none;
+    }
+
+    &:hover {
+        color: $secondary-color;
     }
 }
 
-//Flechita del ítem
-.accordion-button::after {
-    background-color: $secondary-color;
-}
-
-//La pregunta seleccionada
-.accordion-button:not(.collapsed) {
+.faq-button:not(.collapsed) {
     color: $secondary-color;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
-/*
-.faq-data {
-    width: 30%;
-    height: 500px;
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-
-    background: url("../images/section-servicios/servicios.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
-
-    h3 {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    p {
-        padding: 0 20px;
-    }
+//Flechita del ítem cuando está boca abajo
+.faq-button:not(.collapsed)::after {
+    background-image: url("../images/section-faq/arrow-up.png");
+    transform: rotate(-180deg);
 }
-*/
+
+//Flechita del ítem cuando está boca abajo
+.faq-button::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem;
+    background-color: $secondary-color;
+    background-image: url("../images/section-faq/arrow-down.png");
+    transform: rotate(-180deg);
+}

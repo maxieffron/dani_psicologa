@@ -78,7 +78,13 @@
     padding-bottom: 4px;
 
     a {
+        @include DisplayFlex(flex, row, wrap);
         color: black;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
     i {
         width: 45px;

@@ -23,6 +23,25 @@
 }
 
 @media screen and (max-width: 992px) {
+    /*
+    //INDEX
+    .container-index {
+        padding-top: 0;
+    }
+    */
+
+    //HEADER
+    .menu-nav_bar {
+        ul {
+            @include DisplayFlex(flex, column, wrap);
+            padding-right: 0;
+        }
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+
     //FOOTER
     .footer-menu,
     .footer-data {

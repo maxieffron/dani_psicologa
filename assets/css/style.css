@@ -118,7 +118,7 @@ nav {
   height: auto;
 }
 
-.menu-nav_bar {
+.navbar-collapse {
   flex-grow: 0;
 }
 
@@ -127,23 +127,23 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   padding-right: 20px;
-}
-
-.menu-nav_bar li {
-  margin-right: 15px;
-  list-style: none;
+  align-items: center;
 }
 
 .menu-nav_bar a {
   text-decoration: none;
-  padding: 16px;
   font-size: 16px;
   font-weight: 600;
   color: #8c8c8c;
   text-align: center;
 }
 
-.menu-nav_bar a:hover {
+.menu-list {
+  padding: 4px 16px;
+  list-style: none;
+}
+
+.menu-list:hover {
   background-color: #d9ada0;
   border-radius: 3px;
 }
@@ -163,7 +163,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover; //Se adapta al tamaño de la pantalla*/
   /*background-attachment: fixed;*/
-  margin-top: 94px;
+  padding-top: 80px;
 }
 
 /* Carousel */
@@ -362,54 +362,54 @@ nav {
   margin-bottom: 30px;
 }
 
-.accordion-header {
+.faq-header {
+  background: none;
   border: none;
 }
 
-.accordion-item {
+.faq-item {
   border: none;
 }
 
-.accordion-item button {
+.faq-button {
   color: #8c8c8c;
   font-weight: 600;
   font-size: 18px;
+  border: none;
+  background: none;
+  box-shadow: none;
 }
 
-.accordion-item button:hover {
+.faq-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.faq-button:hover {
   color: #d9ada0;
 }
 
-.accordion-button::after {
+.faq-button:not(.collapsed) {
+  color: #d9ada0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.faq-button:not(.collapsed)::after {
+  background-image: url("../images/section-faq/arrow-up.png");
+  transform: rotate(-180deg);
+}
+
+.faq-button::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
   background-color: #d9ada0;
+  background-image: url("../images/section-faq/arrow-down.png");
+  transform: rotate(-180deg);
 }
 
-.accordion-button:not(.collapsed) {
-  color: #d9ada0;
-}
-
-/*
-.faq-data {
-    width: 30%;
-    height: 500px;
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-
-    background: url("../images/section-servicios/servicios.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla
-
-    h3 {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    p {
-        padding: 0 20px;
-    }
-}
-*/
 /* ------ INSCRIBIRME ------*/
 .container-contacto {
   display: flex;
@@ -616,7 +616,15 @@ nav {
 }
 
 .footer-info a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   color: black;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  opacity: 0.8;
 }
 
 .footer-info i {
@@ -679,6 +687,21 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
+  /*
+    //INDEX
+    .container-index {
+        padding-top: 0;
+    }
+    */
+  .menu-nav_bar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .menu-list {
+    width: 100%;
+  }
   .footer-menu,
   .footer-data {
     width: 50%;

@@ -9,9 +9,7 @@ nav {
 }
 
 .menu-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include DisplayFlex(flex, row, wrap);
     justify-content: space-between;
     align-items: center;
 }
@@ -30,32 +28,38 @@ nav {
     }
 }
 
-.menu-nav_bar {
+.navbar-collapse {
     flex-grow: 0;
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-right: 20px;
-    }
+}
 
-    li {
-        margin-right: 15px;
-        list-style: none;
+.menu-nav_bar {
+    //flex-grow: 0;
+    ul {
+        @include DisplayFlex(flex, row, wrap);
+        padding-right: 20px;
+        align-items: center;
+        //justify-items: center;
     }
 
     a {
         text-decoration: none;
-        padding: 16px;
+        //padding: 18px;
         font-size: 16px;
         font-weight: $font-weight-600;
         color: $font-color-primary;
         text-align: center;
+    }
+}
 
-        &:hover {
-            background-color: $secondary-color;
-            border-radius: 3px;
-        }
+//Clase a una lista, para "pisar" a lo definido por Bootstrap
+.menu-list {
+    padding: 4px 16px;
+
+    list-style: none;
+
+    &:hover {
+        background-color: $secondary-color;
+        border-radius: 3px;
     }
 }
 
