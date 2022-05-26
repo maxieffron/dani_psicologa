@@ -3,6 +3,7 @@
 .container-faq {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
+    padding-top: 10px;
 }
 
 .container-faq-questions {

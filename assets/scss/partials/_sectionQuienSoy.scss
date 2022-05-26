@@ -3,6 +3,7 @@
 .container-quien-soy {
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
+    padding-top: 10px;
     /*align-items: center;*/
     h2 {
         text-align: map-get($subTitulo, align);

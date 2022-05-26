@@ -7,15 +7,6 @@
         align-items: center;
     }
 
-    /*
-    .container-contacto-info {
-        width: 70%;
-        height: 300px;
-        margin-bottom: 30px;
-        justify-content: center;
-    }
-    */
-
     .container-contacto-form {
         /*width: 650px;*/
         width: 70%;
@@ -23,13 +14,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    /*
-    //INDEX
-    .container-index {
-        padding-top: 0;
-    }
-    */
-
     //HEADER
     .menu-nav_bar {
         ul {
@@ -66,6 +50,19 @@
 }
 
 @media screen and (max-width: 768px) {
+    //MI TALLER
+
+    .container-mi-taller {
+        .description {
+            width: 90%;
+            padding-bottom: 40px;
+        }
+    }
+
+    .container-folleto {
+        padding: 50px 0;
+    }
+
     //CONTACTO
     .container-contacto-form {
         width: 80%;
@@ -100,6 +97,13 @@
 }
 
 @media screen and (max-width: 576px) {
+    //MI TALLER
+    /*
+    .container-folleto {
+        margin-top: 30px;
+    }
+    */
+
     //CONTACTO
     .container-contacto-form {
         height: 470px;
@@ -153,13 +157,6 @@
 
 @media screen and (max-width: 500px) {
     //CONTACTO
-
-    /*
-    .container-contacto-info {
-        height: 230px;
-    }
-    */
-
     .contacto-info {
         margin-left: 20px;
         margin-top: 10px;
@@ -206,8 +203,21 @@
 }
 
 @media screen and (max-width: 360px) {
-    //CONTACTO
+    //HEADER
+    .menu-logo {
+        width: 125px;
 
+        img {
+            width: 125px;
+        }
+    }
+
+    //INDEX
+    .container-index {
+        padding-top: 90px;
+    }
+
+    //CONTACTO
     .contacto-info {
         margin-left: 15px;
         margin-top: 10px;
