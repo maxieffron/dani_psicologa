@@ -50,7 +50,7 @@
 
 //Flechita del ítem cuando está boca abajo
 .faq-button:not(.collapsed)::after {
-    background-image: url("../images/section-faq/arrow-up.png");
+    background-image: url("../images/section-faq/arrow-down.png");
     transform: rotate(-180deg);
 }
 
@@ -60,6 +60,6 @@
     height: 1.5rem;
     background-size: 1.5rem;
     background-color: $secondary-color;
-    background-image: url("../images/section-faq/arrow-down.png");
+    background-image: url("../images/section-faq/arrow-up.png");
     transform: rotate(-180deg);
 }

@@ -414,7 +414,7 @@ nav {
 }
 
 .faq-button:not(.collapsed)::after {
-  background-image: url("../images/section-faq/arrow-up.png");
+  background-image: url("../images/section-faq/arrow-down.png");
   transform: rotate(-180deg);
 }
 
@@ -423,7 +423,7 @@ nav {
   height: 1.5rem;
   background-size: 1.5rem;
   background-color: #d9ada0;
-  background-image: url("../images/section-faq/arrow-down.png");
+  background-image: url("../images/section-faq/arrow-up.png");
   transform: rotate(-180deg);
 }
 
@@ -757,11 +757,11 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
-  /*
-    .container-folleto {
-        margin-top: 30px;
-    }
-    */
+  .icon-folleto {
+    width: 70px;
+    height: 70px;
+    margin-top: -60px;
+  }
   .container-contacto-form {
     height: 470px;
   }
@@ -820,11 +820,11 @@ nav {
 }
 
 @media screen and (max-width: 430px) {
-  /*
-    .container-contacto-info {
-        height: 220px;
-    }
-    */
+  .icon-folleto {
+    width: 50px;
+    height: 50px;
+    margin-top: -40px;
+  }
   .contacto-info {
     margin-left: 15px;
     margin-top: 10px;
@@ -851,6 +851,11 @@ nav {
   }
   .container-index {
     padding-top: 90px;
+  }
+  .icon-folleto {
+    width: 40px;
+    height: 40px;
+    margin-top: -33px;
   }
   .contacto-info {
     margin-left: 15px;

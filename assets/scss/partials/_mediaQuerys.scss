@@ -98,11 +98,11 @@
 
 @media screen and (max-width: 576px) {
     //MI TALLER
-    /*
-    .container-folleto {
-        margin-top: 30px;
+    .icon-folleto {
+        width: 70px;
+        height: 70px;
+        margin-top: -60px;
     }
-    */
 
     //CONTACTO
     .container-contacto-form {
@@ -176,14 +176,14 @@
 }
 
 @media screen and (max-width: 430px) {
-    //CONTACTO
-
-    /*
-    .container-contacto-info {
-        height: 220px;
+    //MI TALLER
+    .icon-folleto {
+        width: 50px;
+        height: 50px;
+        margin-top: -40px;
     }
-    */
 
+    //CONTACTO
     .contacto-info {
         margin-left: 15px;
         margin-top: 10px;
@@ -215,6 +215,13 @@
     //INDEX
     .container-index {
         padding-top: 90px;
+    }
+
+    //MI TALLER
+    .icon-folleto {
+        width: 40px;
+        height: 40px;
+        margin-top: -33px;
     }
 
     //CONTACTO
