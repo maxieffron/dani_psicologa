@@ -1,3 +1,21 @@
+<?php
+ 
+// grab recaptcha library
+require_once "./assets/mail/recaptchalib.php";
+ 
+
+// your secret key
+$secret = "6LdH7EkaAAAAAKe7lnLZnvY6PkQIzDDHS7oSMCBd";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,9 +30,14 @@
             crossorigin="anonymous"
         />
 
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+
         <link rel="stylesheet" href="assets/css/style.css" />
 
-        <title>Daniela Effron</title>
+        <script defer src="./assets/js/main.js"></script>
+        <script defer src="./assets/js/formValidations.js"></script>
+
+        <title>Nacer Con Otro Ser</title>
     </head>
     <body>
         <header>
@@ -634,7 +657,7 @@
                                     En cualquiera de los dos casos, una vez
                                     enviado el formulario de inscripción, la
                                     página te redireccionará a Mercado Pago o
-                                    Paypal, según corresponda.
+                                    Paypal, según tu lugar de residencia.
                                 </p>
                             </div>
                         </div>
@@ -649,12 +672,19 @@
                     <p>
                         Para inscribirte al taller completá el formulario con
                         tus datos. Luego de unos segundos la página te
-                        direccionará a Mercado pago.
+                        direccionará a Mercado pago o Paypal, según tu lugar de
+                        residencia.
                     </p>
                 </section>
 
                 <div class="container-contacto-form">
-                    <form action="">
+                    <form
+                        id="formdata"
+                        name="formulario"
+                        action="./assets/mail/mail.php"
+                        method="post"
+                        class="php-email-form"
+                    >
                         <div class="form-fields">
                             <!--Nombre-->
                             <div class="form-control_field name">
@@ -665,6 +695,22 @@
                                     required
                                     tabindex="1"
                                 />
+
+                                <div
+                                    class="validate"
+                                    id="validate_Nombre"
+                                    style="display: none"
+                                >
+                                    El campo Nombre es obligatorio.
+                                </div>
+
+                                <div
+                                    class="validate"
+                                    id="validate_Len_Nombre"
+                                    style="display: none"
+                                >
+                                    Por favor, ingrese al menos 4 caracteres.
+                                </div>
                             </div>
 
                             <!--Teléfono-->
@@ -676,6 +722,22 @@
                                     required
                                     tabindex="2"
                                 />
+
+                                <div
+                                    class="validate"
+                                    id="validate_Telefono"
+                                    style="display: none"
+                                >
+                                    El campo Teléfono es obligatorio.
+                                </div>
+
+                                <div
+                                    class="validate"
+                                    id="validate_Len_Telefono"
+                                    style="display: none"
+                                >
+                                    Por favor, ingrese al menos 8 caracteres.
+                                </div>
                             </div>
 
                             <!--Email-->
@@ -687,6 +749,22 @@
                                     required
                                     tabindex="3"
                                 />
+
+                                <div
+                                    class="validate"
+                                    id="validate_Email"
+                                    style="display: none"
+                                >
+                                    El campo Email es obligatorio
+                                </div>
+
+                                <div
+                                    class="validate"
+                                    id="validate_Email_OK"
+                                    style="display: none"
+                                >
+                                    Por favor, ingrese un Email válido.
+                                </div>
                             </div>
 
                             <!--
@@ -710,7 +788,7 @@
                             </div>
                             -->
 
-                            <!--Asunto-->
+                            <!--Nacionalidad-->
                             <div class="form-control_field nationality">
                                 <select
                                     name="nationality"
@@ -741,11 +819,23 @@
                                     placeholder="Mensaje"
                                     tabindex="5"
                                 ></textarea>
+
+                                <div
+                                    class="validate"
+                                    id="validate_Msj"
+                                    style="display: none"
+                                >
+                                    El campo Mensaje es obligatorio.
+                                </div>
                             </div>
 
                             <!--Botones-->
                             <div class="form-control_field buttons">
-                                <button type="reset" tabindex="6">
+                                <button
+                                    id="btn-enviar"
+                                    type="reset"
+                                    tabindex="6"
+                                >
                                     Borrar
                                 </button>
 
@@ -785,6 +875,13 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
+
+        <!-- Librerías externas para manejar el popup modal -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Este script es necesario para poder enviar correctamente el mail
+   y debe ir justo ANTES de llamar a la función que envía el mail-->
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     </body>
 
     <footer>

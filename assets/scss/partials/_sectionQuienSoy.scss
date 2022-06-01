@@ -7,7 +7,7 @@
     /*align-items: center;*/
     h2 {
         text-align: map-get($subTitulo, align);
-        font-size: 80px;
+        font-size: 50px;
     }
 
     .description {
@@ -16,7 +16,7 @@
 }
 
 .container-flyer {
-    width: 70%;
+    width: 90%;
     /*border: map-get($borderShadow, borde);
     border-radius: 12px;
     overflow: hidden; //Oculto los sobrantes de la imágen, para que no desborde
@@ -29,7 +29,7 @@
 
     img {
         display: block;
-        width: 80%;
+        width: 90%;
         height: auto;
         margin-left: auto;
         margin-right: auto;

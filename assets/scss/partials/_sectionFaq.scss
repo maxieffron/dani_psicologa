@@ -4,6 +4,9 @@
     @include DisplayFlex(flex, row, wrap);
     justify-content: space-evenly;
     padding-top: 10px;
+    background: url("../images/wallpaper_nav-footer.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container-faq-questions {
