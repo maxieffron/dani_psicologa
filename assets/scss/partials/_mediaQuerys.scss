@@ -41,7 +41,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        //background-color: aquamarine;
     }
 
     .footer-info {
@@ -50,17 +49,24 @@
 }
 
 @media screen and (max-width: 768px) {
-    //MI TALLER
+    .description {
+        padding-top: 90px;
+    }
 
+    //MI TALLER
     .container-mi-taller {
         .description {
             width: 90%;
-            padding-bottom: 40px;
+            //padding-bottom: 40px;
         }
     }
 
     .container-folleto {
-        padding: 50px 0;
+        padding: 20px 0;
+    }
+
+    .folleto {
+        width: 100%;
     }
 
     //CONTACTO

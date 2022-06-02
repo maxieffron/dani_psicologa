@@ -262,6 +262,9 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background: url("../images/wallpaper_nav-footer.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .container-mi-taller .description {
@@ -275,12 +278,12 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 80px 0px;
+  padding: 40px 0px;
 }
 
 .image-portada {
   display: block;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding-top: 20px;
   margin-left: auto;
@@ -288,7 +291,7 @@ nav {
 }
 
 .folleto {
-  width: 96%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -737,12 +740,17 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .description {
+    padding-top: 90px;
+  }
   .container-mi-taller .description {
     width: 90%;
-    padding-bottom: 40px;
   }
   .container-folleto {
-    padding: 50px 0;
+    padding: 20px 0;
+  }
+  .folleto {
+    width: 100%;
   }
   .container-contacto-form {
     width: 100%;
