@@ -38,7 +38,8 @@
 .container-contacto-form {
     /*width: 856px;*/
     width: 60%;
-    height: 360px;
+    //height: 400px;
+    height: auto;
     //background-color: #ffffff;
     background-image: url("../images/wallpaper_nav-footer.jpg");
     background-repeat: no-repeat;
@@ -118,8 +119,9 @@
     margin-top: 13px;
 
     button {
-        width: 100px;
-        margin: 0 30px;
+        width: 140px;
+        //margin: 0 30px;
+        margin: 15px 30px;
         background-color: $secondary-color;
 
         &:hover {

@@ -38,11 +38,20 @@ $(document).on("ready", function () {
 
                 $("#btn-presionar").click();
 
-                //Redireccionamos la página (En este caso, cargamos la misma) a los 3 segundos
-                setTimeout(function () {
-                    url = "https://www.estudiojuridicobia.com.ar";
-                    $(location).attr("href", url);
-                }, 3000);
+                if ($("select[name=nationality]").val() === "Argentina") {
+                    //Redireccionamos la página de Mercado Pago a los 3 segundos
+                    setTimeout(function () {
+                        url = "https://mpago.la/1fnsh2H";
+                        $(location).attr("href", url);
+                    }, 3000);
+                } else {
+                    //Redireccionamos la página de Paypal a los 3 segundos
+                    setTimeout(function () {
+                        url =
+                            "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
+                        $(location).attr("href", url);
+                    }, 3000);
+                }
             } catch {
                 // HUBO UN ERROR
 
@@ -64,14 +73,14 @@ function validarFormulario() {
     //****** CAMPO NOMBRE ******
 
     //Validación Nº1: Campo Obligatorio
-    if ($("input[name=nombre]").val().length === 0) {
+    if ($("input[name=name]").val().length === 0) {
         result = false;
         //Si hay un error, mostramos el texto que corresponde.
         $("#validate_Nombre").fadeIn("slow");
     }
 
     //Validación Nº2: Mínimo de caracteres
-    else if ($("input[name=nombre]").val().length < 4) {
+    else if ($("input[name=name]").val().length < 4) {
         result = false;
         //Si hay un error, mostramos el texto que corresponde.
         $("#validate_Len_Nombre").fadeIn("slow");
@@ -80,14 +89,14 @@ function validarFormulario() {
     //****** CAMPO TELEFONO ******
 
     //Validación Nº1: Campo Obligatorio
-    if ($("input[name=telefono]").val().length === 0) {
+    if ($("input[name=phone]").val().length === 0) {
         result = false;
         //Si hay un error, mostramos el texto que corresponde.
         $("#validate_Telefono").fadeIn("slow");
     }
 
     //Validación Nº2: Mínimo de caracteres
-    else if ($("input[name=telefono]").val().length < 8) {
+    else if ($("input[name=phone]").val().length < 8) {
         result = false;
         //Si hay un error, mostramos el texto que corresponde.
         $("#validate_Len_Telefono").fadeIn("slow");
@@ -107,6 +116,14 @@ function validarFormulario() {
         result = false;
         //Si hay un error, mostramos el texto que corresponde.
         $("#validate_Email_OK").fadeIn("slow");
+    }
+
+    //****** CAMPO RESIDENCIA ******
+
+    if ($("select[name=nationality]").val() === "residencia") {
+        result = false;
+        //Si hay un error, mostramos el texto que corresponde.
+        $("#validate_Residencia").fadeIn("slow");
     }
 
     //****** CAMPO MENSAJE ******

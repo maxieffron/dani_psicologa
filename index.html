@@ -771,27 +771,6 @@ $reCaptcha = new ReCaptcha($secret);
                                 </div>
                             </div>
 
-                            <!--
-                            <div class="form-control_field country">
-                                <input
-                                    type="radio"
-                                    id="argentina"
-                                    name="pais"
-                                    value="Argentina"
-                                    tabindex="4"
-                                />
-                                <label for="argentina">Argentina</label><br />
-                                <input
-                                    type="radio"
-                                    id="otro"
-                                    name="pais"
-                                    value="Otro"
-                                    tabindex="5"
-                                />
-                                <label for="otro">Otro</label><br />
-                            </div>
-                            -->
-
                             <!--Nacionalidad-->
                             <div class="form-control_field nationality">
                                 <select
@@ -811,6 +790,14 @@ $reCaptcha = new ReCaptcha($secret);
 
                                     <option value="Otro">Otro</option>
                                 </select>
+
+                                <div
+                                    class="validate"
+                                    id="validate_Residencia"
+                                    style="display: none"
+                                >
+                                    Debe seleccionar su lugar de residencia.
+                                </div>
                             </div>
 
                             <!--Mensaje-->
@@ -835,15 +822,15 @@ $reCaptcha = new ReCaptcha($secret);
 
                             <!--Botones-->
                             <div class="form-control_field buttons">
-                                <button
-                                    id="btn-enviar"
-                                    type="reset"
-                                    tabindex="6"
-                                >
+                                <button type="reset" tabindex="6">
                                     Borrar
                                 </button>
 
-                                <button type="submit" tabindex="7">
+                                <button
+                                    id="btn-enviar"
+                                    type="submit"
+                                    tabindex="7"
+                                >
                                     Inscribirme
                                 </button>
                             </div>

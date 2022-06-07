@@ -473,7 +473,7 @@ nav {
 .container-contacto-form {
   /*width: 856px;*/
   width: 60%;
-  height: 360px;
+  height: auto;
   background-image: url("../images/wallpaper_nav-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -554,8 +554,8 @@ nav {
 }
 
 .buttons button {
-  width: 100px;
-  margin: 0 30px;
+  width: 140px;
+  margin: 15px 30px;
   background-color: #d9ada0;
 }
 
@@ -756,7 +756,6 @@ nav {
     width: 100%;
   }
   .buttons button {
-    margin: 0 10px;
     font-size: 16px;
   }
   .redes-sociales {
@@ -782,9 +781,6 @@ nav {
     width: 70px;
     height: 70px;
     margin-top: -60px;
-  }
-  .container-contacto-form {
-    height: 470px;
   }
   .container-contacto-form .name,
   .container-contacto-form .phone,
@@ -837,6 +833,14 @@ nav {
   .contacto-info h3 {
     font-size: 14px;
     padding-top: 13px;
+  }
+  .container-contacto-form .buttons {
+    margin-top: 68px;
+    margin-bottom: 10px;
+  }
+  .container-contacto-form .buttons button {
+    width: 100%;
+    margin-top: 12px;
   }
 }
 
@@ -893,11 +897,8 @@ nav {
     font-size: 9px;
     padding-top: 10px;
   }
-  .container-contacto-form {
-    height: 490px;
-  }
   .container-contacto-form .buttons {
-    margin-top: 58px;
+    margin-top: 84px;
   }
   .container-contacto-form .buttons button {
     width: 100%;

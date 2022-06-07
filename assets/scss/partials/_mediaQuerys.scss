@@ -76,7 +76,7 @@
     }
 
     .buttons button {
-        margin: 0 10px;
+        //margin: 16px 10px;
         font-size: 16px;
     }
 
@@ -112,7 +112,7 @@
 
     //CONTACTO
     .container-contacto-form {
-        height: 470px;
+        //height: 520px;
 
         .name,
         .phone,
@@ -177,6 +177,21 @@
         h3 {
             font-size: 14px;
             padding-top: 13px;
+        }
+    }
+
+    .container-contacto-form {
+        //height: 540px;
+        //height: auto;
+
+        .buttons {
+            margin-top: 68px;
+            margin-bottom: 10px;
+
+            button {
+                width: 100%;
+                margin-top: 12px;
+            }
         }
     }
 }
@@ -249,10 +264,8 @@
     }
 
     .container-contacto-form {
-        height: 490px;
-
         .buttons {
-            margin-top: 58px;
+            margin-top: 84px;
 
             button {
                 width: 100%;
