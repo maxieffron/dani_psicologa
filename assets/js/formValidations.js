@@ -15,17 +15,6 @@ function soloNumeros(e) {
     }
 }
 
-//Cada vez que clickeamos sobre un enlace del menú, llamamos al evento "click" del nav.bar,para replicar el efecto
-//que se produce al hacer click sobre el menú hamburguesa.
-//let itemsMenu = document.getElementById("btn-enviar");
-//let itemsMenu = document.getElementsByClassName("nav-item");
-//let itemsMenu = document.querySelector(".nav-item");
-document.querySelectorAll(".nav-item").forEach((element) => {
-    element.addEventListener("click", () => {
-        document.querySelector(".navbar-toggler").click();
-    });
-});
-
 $(document).on("ready", function () {
     $("#btn-enviar").click(async function () {
         var url = "../mail/mail.php";

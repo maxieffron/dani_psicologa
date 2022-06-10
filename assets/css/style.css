@@ -36,8 +36,8 @@ h2 {
   font-weight: 600;
 }
 
-main {
-  padding-top: 100px;
+.description {
+  padding-top: 120px;
 }
 
 .description h1 {
@@ -606,7 +606,7 @@ nav {
 .footer-menu a {
   text-decoration: none;
   padding: 16px;
-  padding-left: 30px;
+  margin-left: 30px;
   font-size: 16px;
   font-weight: 600;
   color: #8c8c8c;
