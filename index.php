@@ -1,18 +1,17 @@
 <?php
  
 // grab recaptcha library
-require_once "./assets/mail/recaptchalib.php";
+require_once "recaptchalib.php";
  
 
 // your secret key
-$secret = "6LdH7EkaAAAAAKe7lnLZnvY6PkQIzDDHS7oSMCBd";
+$secret = "6Lffql4gAAAAAFRovLdHnX-S_pApzRUPAujfHp7O";
  
 // empty response
 $response = null;
  
 // check secret key
 $reCaptcha = new ReCaptcha($secret);
-
 
 ?>
 
@@ -35,7 +34,25 @@ $reCaptcha = new ReCaptcha($secret);
         <link rel="stylesheet" href="assets/css/normalize.css" />
 
         <link rel="stylesheet" href="assets/css/style.css" />
+        
         <script defer src="./assets/js/main.js"></script>
+
+        <script defer src='https://www.google.com/recaptcha/api.js' async></script>
+
+        <script defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Librerías externas para manejar el popup modal -->
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Este script es necesario para poder enviar correctamente el mail
+   y debe ir justo ANTES de llamar a la función que envía el mail-->
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script defer src="./assets/js/formValidations.js"></script>
+
         <title>Nacer Con Otro Ser</title>
     </head>
     <body>
@@ -43,7 +60,7 @@ $reCaptcha = new ReCaptcha($secret);
             <!-- Barra de Navegación -->
             <nav class="fixed-top navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid menu-container">
-                    <a class="menu-logo navbar-brand" href="index.html"
+                    <a class="menu-logo navbar-brand" href="index.php"
                         ><div>
                             <img src="assets/images/logo.png" alt="Logo" />
                         </div>
@@ -819,8 +836,16 @@ $reCaptcha = new ReCaptcha($secret);
                                 </div>
                             </div>
 
+                            <!--Captcha-->
+                            <div id="re_captcha">
+                                <div class="g-recaptcha" data-sitekey="6Lffql4gAAAAAP_dTuaxcTaqmllM9PQcKPlDRgi3">
+                                </div> 
+                            </div>
+
+
                             <!--Botones-->
                             <div class="form-control_field buttons">
+                               
                                 <button type="reset" tabindex="6">
                                     Borrar
                                 </button>
@@ -833,6 +858,9 @@ $reCaptcha = new ReCaptcha($secret);
                                     Inscribirme
                                 </button>
                             </div>
+
+                             
+
 
                             <button
                                 id="btn-presionar"
@@ -1001,19 +1029,7 @@ $reCaptcha = new ReCaptcha($secret);
             </i>
         </a>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
-
-        <!-- Librerías externas para manejar el popup modal -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Este script es necesario para poder enviar correctamente el mail
-   y debe ir justo ANTES de llamar a la función que envía el mail-->
-        <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
-        <script src="./assets/js/formValidations.js"></script>
+        
     </body>
 
     <footer>

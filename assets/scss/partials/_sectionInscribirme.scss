@@ -112,16 +112,27 @@
     width: 93%;
 }
 
+#re_captcha {
+    @include DisplayFlex(flex, row, wrap);
+
+    //margin-left: 10px;
+    margin-left: 26px;
+    margin-top: 15px;
+    transform: scale(0.84);
+    transform-origin: 0 0;
+}
+
 .buttons {
     @include DisplayFlex(flex, row, wrap);
 
     justify-content: space-between;
     margin-top: 13px;
+    margin-bottom: 13px;
 
     button {
-        width: 140px;
+        width: 120px;
         //margin: 0 30px;
-        margin: 15px 30px;
+        margin: 15px 15px;
         background-color: $secondary-color;
 
         &:hover {

@@ -545,17 +545,28 @@ nav {
   width: 93%;
 }
 
+#re_captcha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 26px;
+  margin-top: 15px;
+  transform: scale(0.84);
+  transform-origin: 0 0;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .buttons button {
-  width: 140px;
-  margin: 15px 30px;
+  width: 120px;
+  margin: 15px 15px;
   background-color: #d9ada0;
 }
 
@@ -721,6 +732,18 @@ nav {
   .menu-list {
     width: 100%;
   }
+  #re_captcha,
+  #re_imageselect {
+    margin-left: 0;
+    transform: none;
+  }
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  .buttons button {
+    padding: 10px;
+  }
   .footer-menu,
   .footer-data {
     width: 50%;
@@ -782,6 +805,13 @@ nav {
     height: 70px;
     margin-top: -60px;
   }
+  .container-contacto-form {
+    /*
+        .buttons {
+            margin-top: 80px;
+        }
+        */
+  }
   .container-contacto-form .name,
   .container-contacto-form .phone,
   .container-contacto-form .email,
@@ -792,8 +822,9 @@ nav {
     width: 93%;
     height: 116px;
   }
-  .container-contacto-form .buttons {
-    margin-top: 80px;
+  .container-contacto-form #re_captcha,
+  .container-contacto-form #re_imageselect {
+    margin-top: 70px;
   }
   .footer-menu,
   .footer-data {
@@ -835,11 +866,10 @@ nav {
     padding-top: 13px;
   }
   .container-contacto-form .buttons {
-    margin-top: 68px;
     margin-bottom: 10px;
   }
   .container-contacto-form .buttons button {
-    width: 100%;
+    width: 70%;
     margin-top: 12px;
   }
 }
@@ -864,6 +894,11 @@ nav {
   .contacto-info h3 {
     font-size: 11px;
     padding-top: 10px;
+  }
+  #re_captcha,
+  #re_imageselect {
+    transform: scale(0.84);
+    transform-origin: 0 0;
   }
 }
 
@@ -897,12 +932,13 @@ nav {
     font-size: 9px;
     padding-top: 10px;
   }
-  .container-contacto-form .buttons {
-    margin-top: 84px;
-  }
   .container-contacto-form .buttons button {
-    width: 100%;
+    width: 70%;
     margin-top: 12px;
+  }
+  #re_captcha,
+  #re_imageselect {
+    transform: scale(0.74);
   }
   .footer-menu ul {
     padding-left: 0;

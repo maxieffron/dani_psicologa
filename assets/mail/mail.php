@@ -22,8 +22,10 @@ $name = utf8_decode($name);
 //Teléfono
 $phone = $_POST['phone'];
 
+
 //Mail
 $email = $_POST['email'];
+$email = utf8_decode($email);
 
 $nationality = $_POST['nationality'];
 
