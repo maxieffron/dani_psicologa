@@ -249,6 +249,7 @@
     #re_imageselect {
         transform: scale(0.84);
         transform-origin: 0 0;
+        margin-left: 48px;
     }
 }
 
@@ -305,8 +306,10 @@
 
     #re_captcha,
     #re_imageselect {
-        transform: scale(0.74);
+        transform: scale(0.7);
+        margin-left: 92px;
     }
+
     //FOOTER
     .footer-menu {
         ul {
@@ -336,5 +339,14 @@
             padding-left: 6px;
             padding-top: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    //CONTACTO
+    #re_captcha,
+    #re_imageselect {
+        transform: scale(0.6);
+        margin-left: 122px;
     }
 }
