@@ -1,15 +1,13 @@
 <?php
 
 
+require("class.phpmailer.php");
+require("class.smtp.php");
 
 /* ------ captura de los campos ------ 
 LO QUE VA DESPUÉS EL SIGNO $ ES EL NOMBRE DE LA VARIABLE.
 LO QUE VA ENTRE CORCHETES DEBE COINCIDIR CON EL NAME DEL INPUT QUE HICIMOS EN EL FORMULARIO.
 */
-
-//Destinatario (Mi mail)
-$destinatario = "nacerconotroser@gmail.com";
-
 
 
 // ** CAMPOS QUE COMPLETAMOS EN EL FORMULARIO **
@@ -39,13 +37,40 @@ $message = $_POST['message'];
 //Convertimos los caracteres especiales en caracteres adecuados (Ej: Acentos)
 $message = utf8_decode($message); 
 
+// Valores enviados desde el formulario
+if ( !isset($name) || !isset($phone) || !isset($email) || !isset($nationality) || !isset($message) ) {
+    die ("Es necesario completar todos los datos del formulario");
+}
+
+// Datos de la cuenta de correo utilizada para enviar vía SMTP
+$smtpHost = "c2051336.ferozo.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "taller@nacerconotroser.com";  // Mi cuenta de correo
+$smtpClave = "Balonim10";  // Mi contraseña
+
+//Destinatario (Mi mail)
+$emailDestino = "nacerconotroser@gmail.com";
+
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->SMTPAuth = true;
+$mail->Port = 465; 
+$mail->SMTPSecure = 'ssl';
+$mail->IsHTML(true); 
+$mail->CharSet = "utf-8";
+
+//****** VALORES A MODIFICAR ******//
+$mail->Host = $smtpHost; 
+$mail->Username = $smtpUsuario; 
+$mail->Password = $smtpClave;
 
 
-//Cabecera
-$cabecera = "From: $name <$email>\nReply-To:$email\nContent-Type: text/html; charset=iso-8859-1\n";
+/****** ARMADO DEL MAIL ******/
+$mail->From = $email; // Email desde donde envío el correo.
+$mail->FromName = $name;
+$mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
 
 
-// cuerpo del email
+// Cuerpo del email
 $message="
 <strong>Nombre y Apellido:</strong> $name <br/>
 <br />
@@ -58,32 +83,23 @@ $message="
 
 <strong>Mensaje:</strong> <br/>
 $message <br/>
-
 ";
 
 
-// envío del email
-// Se compone de lo siguiente:
-/*
+// Este es el titulo del email.
+$mail->Subject = "Inscripción"; 
+$mensajeHtml = nl2br($message);
+$mail->Body = "{$mensajeHtml}"; // Texto del email en formato HTML
+$mail->AltBody = "{$message}"; // Texto sin formato HTML
 
-1) Destinatario
-2) luego de la "," viene el Asunto
-3) "From" es el Remitente
-4) el "nReply-to" es el "Responder a..."
-*/
-//mail("info@daletdesign.com.ar", $asunto, $mensaje, "From: $nombre <$mail>\nReply-To:$mail\nContent-Type: text/html; charset=iso-8859-1\n");
-//
+//******  FIN - VALORES A MODIFICAR ******//
 
-         /*include '../index.html';Incluyo la página principal*/
-		if (mail($destinatario, $subject, $message, $cabecera)) { 
-		 echo "Success";
-		}
-
-	    else{
-	     
-	     echo "Error";
-
-	    }
+$estadoEnvio = $mail->Send(); 
+if($estadoEnvio){
+    echo "El correo fue enviado correctamente.";
+} else {
+    echo "Ocurrió un error inesperado.";
+}
 
 ?>
 
