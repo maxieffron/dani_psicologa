@@ -15,9 +15,9 @@ function soloNumeros(e) {
     }
 }
 
-$(document).on("ready", function () {
-    $("#btn-enviar").click(async function () {
-        var url = "../mail/mail.php";
+$(document).ready(function () {
+    $("#btn-enviar").on("click", async function () {
+        var url = "./assets/mail/mail.php";
 
         //Validamos que los datos del formulario estén correctos
         if (!validarFormulario()) {
@@ -28,13 +28,12 @@ $(document).on("ready", function () {
             var valido = false;
 
             try {
-                const r = await $.ajax({
+                //const r = await $.ajax({
+                $.ajax({
                     type: "POST",
                     url: url,
                     data: $("#formdata").serialize(),
                 });
-
-                //TODO FUE OK
 
                 $("#btn-presionar").click();
 
