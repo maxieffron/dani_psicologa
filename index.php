@@ -35,9 +35,9 @@ $reCaptcha = new ReCaptcha($secret);
 
         <link rel="stylesheet" href="assets/css/style.css" />
         
-        <script defer src="./assets/js/main.js"></script>
-
         <script defer src='https://www.google.com/recaptcha/api.js' async></script>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <script defer
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -45,13 +45,14 @@ $reCaptcha = new ReCaptcha($secret);
             crossorigin="anonymous"
         ></script>
 
-        <!-- Librerías externas para manejar el popup modal -->
-        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
         <!-- Este script es necesario para poder enviar correctamente el mail
    y debe ir justo ANTES de llamar a la función que envía el mail-->
-        <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
-        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+        <script defer src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+         
+
+        <script defer src="./assets/js/main.js"></script>
+
         <script defer src="./assets/js/formValidations.js"></script>
 
         <title>Nacer Con Otro Ser</title>
@@ -61,7 +62,7 @@ $reCaptcha = new ReCaptcha($secret);
             <!-- Barra de Navegación -->
             <nav class="fixed-top navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid menu-container">
-                    <a class="menu-logo navbar-brand" href="index.php"
+                    <a class="menu-logo navbar-brand" href="/"
                         ><div>
                             <img src="assets/images/logo.png" alt="Logo" />
                         </div>
@@ -853,172 +854,14 @@ $reCaptcha = new ReCaptcha($secret);
 
                                 <button
                                     id="btn-enviar"
-                                    type="submit"
+                                    
                                     tabindex="7"
                                 >
                                     Inscribirme
                                 </button>
                             </div>
-
-                             
-
-
-                            <button
-                                id="btn-presionar"
-                                data-target="#exito"
-                                data-toggle="modal"
-                                type="button"
-                                tabindex="8"
-                                style="display: none"
-                            >
-                                Presionar
-                            </button>
-
-                            <button
-                                id="btn-error"
-                                data-target="#fracaso"
-                                data-toggle="modal"
-                                type="button"
-                                tabindex="9"
-                                style="display: none"
-                            >
-                                Error
-                            </button>
-
-                            <button
-                                id="btn-campos_obligatorios"
-                                data-target="#campos_obligatorios"
-                                data-toggle="modal"
-                                type="button"
-                                tabindex="10"
-                                style="display: none"
-                            >
-                                Campos Obligatorios
-                            </button>
-                        </div>
+                         </div>
                     </form>
-                </div>
-
-                <!-- SI TODO FUE OK CON EL ENVÍO DEL MAIL, MOSTRAMOS ESTE POP UP -->
-                <div class="container">
-                    <!-- Modal-->
-                    <div
-                        class="modal fade"
-                        id="exito"
-                        role="dialog"
-                        style="display: none"
-                    >
-                        <div class="modal-dialog">
-                            <div class="modal-content pop-up">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">
-                                        <img
-                                            src="assets/images/Modal/Check_Ok.png"
-                                            width="50"
-                                            height="50"
-                                            alt="Mail enviado con éxito"
-                                        />
-                                        Su mensaje ha sido enviado. <br />
-                                        Muchas gracias!!
-                                    </h4>
-                                </div>
-                                <div class="modal-body" align="center">
-                                    <p>
-                                        En breve nos pondremos en contacto con
-                                        usted.
-                                    </p>
-                                    <img
-                                        src="assets/images/Modal/Logo_NCOS.png"
-                                        width="200"
-                                        height="200"
-                                        align="modal-content"
-                                        alt="Nacer Con Otro Ser"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SI HUBO UN ERROR CON EL ENVÍO DEL MAIL, MOSTRAMOS ESTE POP UP -->
-                <div class="container">
-                    <div
-                        class="modal fade"
-                        id="fracaso"
-                        role="dialog"
-                        style="display: none"
-                    >
-                        <div class="modal-dialog">
-                            <div class="modal-content pop-up">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">
-                                        <img
-                                            src="assets/images/Modal/Check_Error.png"
-                                            width="50"
-                                            height="50"
-                                            alt="Se ha producido un error al enviar el mail"
-                                        />
-                                        Se ha producido un error al enviar el
-                                        email.
-                                    </h4>
-                                </div>
-                                <div class="modal-body" align="center">
-                                    <p>
-                                        Por favor, aguarde unos minutos e
-                                        intente nuevamente completar los datos.
-                                    </p>
-
-                                    <img
-                                        src="assets/images/Modal/Logo_NCOS.png"
-                                        width="200"
-                                        height="200"
-                                        align="modal-content"
-                                        alt="Nacer Con Otro Ser"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SI HAY CAMPOS OBLIGATORIOS SIN COMPLETAR EN EL FORMULARIO DE ENVÍO DE MAIL, MOSTRAMOS ESTE POP UP -->
-                <div class="container">
-                    <div
-                        class="modal fade"
-                        id="campos_obligatorios"
-                        role="dialog"
-                        style="display: none"
-                    >
-                        <div class="modal-dialog">
-                            <div class="modal-content pop-up">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">
-                                        <img
-                                            src="assets/images/Modal/Check_Error.png"
-                                            width="50"
-                                            height="50"
-                                            alt="No es posible enviar el mail"
-                                        />
-                                        No es posible enviar el email.
-                                    </h4>
-                                </div>
-                                <div class="modal-body" align="center">
-                                    <p>
-                                        Por favor, complete todos los campos
-                                        obligatorios del formulario.
-                                    </p>
-
-                                    <img
-                                        src="assets/images/Modal/Logo_NCOS.png"
-                                        width="200"
-                                        height="200"
-                                        align="modal-content"
-                                        alt="Nacer Con Otro Ser"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>

@@ -17,44 +17,81 @@ function soloNumeros(e) {
 
 $(document).ready(function () {
     $("#btn-enviar").on("click", async function () {
-        var url = "./assets/mail/mail.php";
-
         //Validamos que los datos del formulario estén correctos
         if (!validarFormulario()) {
             event.preventDefault();
 
-            $("#btn-campos_obligatorios").click();
+            //$("#btn-campos_obligatorios").click();
+
+            //Campos obligatorios
+            Swal.fire({
+                icon: "warning",
+                title: "Hay campos incompletos",
+                text: "Por favor, complete todos los campos obligatorios",
+                imageUrl: "./assets/images/logo.png",
+                imageWidth: 200,
+                showConfirmButton: true,
+                confirmButtonColor: "#8c8c8c",
+            });
         } else {
-            var valido = false;
+            //let valido = false;
 
             try {
                 //const r = await $.ajax({
                 $.ajax({
                     type: "POST",
-                    url: url,
+                    url: "./assets/mail/mail.php",
                     data: $("#formdata").serialize(),
+                    success: function () {
+                        //Éxito
+                        Swal.fire({
+                            title: "¡La inscripción ha sido exitosa!",
+                            text:
+                                $("input[name=name]").val() +
+                                ", en breve te vamos a redireccionar a tu plataforma de pago",
+                            icon: "success",
+                            imageUrl: "./assets/images/logo.png",
+                            imageWidth: 200,
+                            showConfirmButton: false,
+                            timer: 8000,
+                        });
+
+                        /*
+                        //Redireccionamos la página de Mercado Pago a los 3 segundos
+                        setTimeout(function () {
+                            const url =
+                                $("select[name=nationality]").val() === "Argentina"
+                                    ? "https://mpago.la/1fnsh2H"
+                                    : //Redireccionamos la página de Paypal a los 3 segundos
+                                    "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
+                            window.open(url, "_blank");
+                        }, 3000);
+                        */
+                    },
+                    error: function () {
+                        //Error
+                        Swal.fire({
+                            title: "¡Oops... Se produjo un error al procesar tu inscripción.!",
+                            text: "Aguarde unos minutos e intente nuevamente.",
+                            icon: "error",
+                            imageUrl: "./assets/images/logo.png",
+                            imageWidth: 200,
+                            showConfirmButton: false,
+                            timer: 8000,
+                        });
+                    },
                 });
-
-                $("#btn-presionar").click();
-
-                if ($("select[name=nationality]").val() === "Argentina") {
-                    //Redireccionamos la página de Mercado Pago a los 3 segundos
-                    setTimeout(function () {
-                        url = "https://mpago.la/1fnsh2H";
-                        $(location).attr("href", url);
-                    }, 3000);
-                } else {
-                    //Redireccionamos la página de Paypal a los 3 segundos
-                    setTimeout(function () {
-                        url =
-                            "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
-                        $(location).attr("href", url);
-                    }, 3000);
-                }
             } catch {
-                // HUBO UN ERROR
-
-                $("#btn-error").click();
+                //Error
+                Swal.fire({
+                    title: "¡Oops... Se produjo un error al procesar tu inscripción.!",
+                    text: "Aguarde unos minutos e intente nuevamente.",
+                    icon: "error",
+                    imageUrl: "./assets/images/logo.png",
+                    imageWidth: 200,
+                    showConfirmButton: false,
+                    timer: 2000,
+                });
             }
         }
     });
