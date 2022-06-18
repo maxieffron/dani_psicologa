@@ -27,7 +27,7 @@ $(document).ready(function () {
             Swal.fire({
                 icon: "warning",
                 title: "Hay campos incompletos",
-                text: "Por favor, complete todos los campos obligatorios",
+                text: "Por favor, completá todos los campos obligatorios",
                 imageUrl: "./assets/images/logo.png",
                 imageWidth: 200,
                 showConfirmButton: true,
