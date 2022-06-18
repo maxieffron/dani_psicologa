@@ -38,7 +38,7 @@ $(document).ready(function () {
 
             try {
                 //const r = await $.ajax({
-                $.ajax({
+                await $.ajax({
                     type: "POST",
                     url: "./assets/mail/mail.php",
                     data: $("#formdata").serialize(),
@@ -53,31 +53,31 @@ $(document).ready(function () {
                             imageUrl: "./assets/images/logo.png",
                             imageWidth: 200,
                             showConfirmButton: false,
-                            timer: 8000,
+                            timer: 4000,
                         });
 
-                        /*
                         //Redireccionamos la página de Mercado Pago a los 3 segundos
                         setTimeout(function () {
                             const url =
-                                $("select[name=nationality]").val() === "Argentina"
+                                $("select[name=nationality]").val() ===
+                                "Argentina"
                                     ? "https://mpago.la/1fnsh2H"
                                     : //Redireccionamos la página de Paypal a los 3 segundos
-                                    "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
+                                      "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
                             window.open(url, "_blank");
-                        }, 3000);
-                        */
+                            location.href = "/";
+                        }, 4000);
                     },
                     error: function () {
                         //Error
                         Swal.fire({
                             title: "¡Oops... Se produjo un error al procesar tu inscripción.!",
-                            text: "Aguarde unos minutos e intente nuevamente.",
+                            text: "Aguarda unos minutos e intentalo nuevamente.",
                             icon: "error",
                             imageUrl: "./assets/images/logo.png",
                             imageWidth: 200,
                             showConfirmButton: false,
-                            timer: 8000,
+                            timer: 4000,
                         });
                     },
                 });
@@ -85,12 +85,12 @@ $(document).ready(function () {
                 //Error
                 Swal.fire({
                     title: "¡Oops... Se produjo un error al procesar tu inscripción.!",
-                    text: "Aguarde unos minutos e intente nuevamente.",
+                    text: "Aguarda unos minutos e intenta nuevamente.",
                     icon: "error",
                     imageUrl: "./assets/images/logo.png",
                     imageWidth: 200,
                     showConfirmButton: false,
-                    timer: 2000,
+                    timer: 4000,
                 });
             }
         }

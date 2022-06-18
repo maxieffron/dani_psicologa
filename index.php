@@ -47,8 +47,8 @@ $reCaptcha = new ReCaptcha($secret);
 
         <!-- Este script es necesario para poder enviar correctamente el mail
    y debe ir justo ANTES de llamar a la función que envía el mail-->
-        <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
-        <script defer src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <!-- <script defer src="https://code.jquery.com/jquery-2.2.2.min.js"></script>-->
          
 
         <script defer src="./assets/js/main.js"></script>
@@ -703,7 +703,7 @@ $reCaptcha = new ReCaptcha($secret);
                     <form
                         id="formdata"
                         name="formulario"
-                        action=""
+                        onsubmit="return false"
                         method="post"
                         class="php-email-form"
                     >
@@ -843,6 +843,7 @@ $reCaptcha = new ReCaptcha($secret);
                                 <div class="g-recaptcha" data-sitekey="6Lffql4gAAAAAP_dTuaxcTaqmllM9PQcKPlDRgi3">
                                 </div> 
                             </div>
+                            
 
 
                             <!--Botones-->
@@ -854,7 +855,7 @@ $reCaptcha = new ReCaptcha($secret);
 
                                 <button
                                     id="btn-enviar"
-                                    
+
                                     tabindex="7"
                                 >
                                     Inscribirme
