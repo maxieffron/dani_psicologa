@@ -58,6 +58,11 @@
         text-decoration: underline;
         font-weight: $font-weight-600;
     }
+
+    .text-weight {
+        font-weight: $font-weight-600;
+    }
+
     /*
     border: map-get($borderShadow, borde);
     border-radius: map-get($borderShadow, radio);

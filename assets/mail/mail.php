@@ -66,6 +66,9 @@ $mail->Password = $smtpClave;
 
 /****** ARMADO DEL MAIL ******/
 $mail->From = "taller@nacerconotroser.com"; // Email desde donde envío el correo.
+$mail->addReplyTo($email);
+//$mail->addCC('copiado@yahoo.com');
+//$mail->addBCC('copia_oculta@yahoo.es');
 $mail->FromName = "Inscripción al Taller";
 $mail->AddAddress($emailDestino); // Esta es la dirección a donde enviamos los datos del formulario
 

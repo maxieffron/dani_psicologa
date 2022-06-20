@@ -39,11 +39,9 @@ h2 {
 .description {
   padding-top: 120px;
 }
-
 .description h1 {
   padding-top: 10px;
 }
-
 .description p {
   margin: 0 auto;
   padding-bottom: 20px;
@@ -70,18 +68,17 @@ h4 {
   transition: display 0.5s ease-in-out;
   z-index: 994;
 }
-
 .back-to-top i {
   font-size: 30px;
   position: absolute;
   top: 5px;
   left: 5px;
   /*
-      &:hover {
-        color:$font-color-primary;
-        transition: background 0.2s ease-in-out;
-      }
-      */
+  &:hover {
+    color:$font-color-primary;
+    transition: background 0.2s ease-in-out;
+  }
+  */
 }
 
 .arrow-up {
@@ -111,7 +108,6 @@ nav {
   margin: 10px 20px;
   /*border: 1px solid red;*/
 }
-
 .menu-logo img {
   /*src: url("../images/Foto-de-Perfil.jpg");*/
   width: 200px;
@@ -129,7 +125,6 @@ nav {
   padding-right: 20px;
   align-items: center;
 }
-
 .menu-nav_bar a {
   text-decoration: none;
   font-size: 16px;
@@ -142,7 +137,6 @@ nav {
   padding: 4px 16px;
   list-style: none;
 }
-
 .menu-list:hover {
   background-color: #d9ada0;
   border-radius: 3px;
@@ -160,8 +154,8 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   /*background: url("../images/section-index/fondo-index.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; //Se adapta al tamaño de la pantalla*/
+  background-repeat: no-repeat;
+  background-size: cover; //Se adapta al tamaño de la pantalla*/
   /*background-attachment: fixed;*/
   padding-top: 120px;
 }
@@ -180,7 +174,6 @@ nav {
   text-transform: capitalize;
   margin: 30px 0;
 }
-
 .index-info h2 {
   /*display: inline-block;*/
   /*font-weight: $font-weight-600;*/
@@ -191,9 +184,8 @@ nav {
   color: #8c8c8c;
   font-size: 16px;
   /*left: 0;
-        right: 0;*/
+  right: 0;*/
 }
-
 .index-info p {
   color: #d9ada0;
   text-align: center;
@@ -210,12 +202,10 @@ nav {
   padding-top: 10px;
   /*align-items: center;*/
 }
-
 .container-quien-soy h2 {
   text-align: center;
   font-size: 50px;
 }
-
 .container-quien-soy .description {
   width: 70%;
 }
@@ -223,15 +213,14 @@ nav {
 .container-flyer {
   width: 90%;
   /*border: map-get($borderShadow, borde);
-    border-radius: 12px;
-    overflow: hidden; //Oculto los sobrantes de la imágen, para que no desborde
-    */
+  border-radius: 12px;
+  overflow: hidden; //Oculto los sobrantes de la imágen, para que no desborde
+  */
   /*
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-*/
+      border-radius: map-get($borderShadow, radio);
+      box-shadow: map-get($borderShadow, sombra);
+  */
 }
-
 .container-flyer img {
   display: block;
   width: 90%;
@@ -243,7 +232,6 @@ nav {
 .quien-soy-icons {
   margin-top: 40px;
 }
-
 .quien-soy-icons img {
   display: block;
   width: 60%;
@@ -251,7 +239,6 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-
 .quien-soy-icons img:hover {
   background-image: url("../images/section-quien-soy/quien-soy-iconos_hover.jpg");
 }
@@ -266,11 +253,10 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 }
-
 .container-mi-taller .description {
   width: 70%;
   /*padding-top: 110px;
-        padding-bottom: 20px;*/
+  padding-bottom: 20px;*/
 }
 
 .container-folleto {
@@ -299,26 +285,27 @@ nav {
   justify-content: center;
   align-content: flex-start;
   /*background-color: $primary-color;
-    background-image: url("../images/wallpaper_nav-footer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
+  background-image: url("../images/wallpaper_nav-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
   /*
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-    */
+  border: map-get($borderShadow, borde);
+  border-radius: map-get($borderShadow, radio);
+  box-shadow: map-get($borderShadow, sombra);
+  */
 }
-
 .folleto p {
   padding: 20px 12px 0 12px;
   color: #8c8c8c;
   font-size: 15px;
   text-align: center;
 }
-
 .folleto .p-underline-weight {
   text-decoration: underline;
+  font-weight: 600;
+}
+.folleto .text-weight {
   font-weight: 600;
 }
 
@@ -332,24 +319,23 @@ nav {
   border-radius: 50%;
   margin-top: -70px;
   /*
-    i {
-        display: inline-block;
-        font-size: 46px;
-        color: $secondary-color;
-        padding-left: 10px;
-        padding-top: 6px;
+  i {
+      display: inline-block;
+      font-size: 46px;
+      color: $secondary-color;
+      padding-left: 10px;
+      padding-top: 6px;
 
-        &:hover {
-            color: #ffffff;
-        }
-    }
+      &:hover {
+          color: #ffffff;
+      }
+  }
 
-    &:hover {
-        background-color: $primary-color;
-    }
-    */
+  &:hover {
+      background-color: $primary-color;
+  }
+  */
 }
-
 .icon-folleto img {
   display: inline-block;
   width: 100%;
@@ -365,7 +351,6 @@ nav {
   text-align: center;
   padding: 10px 0;
 }
-
 .info-formacion p {
   padding: 0 20px;
 }
@@ -404,12 +389,10 @@ nav {
   background: none;
   box-shadow: none;
 }
-
 .faq-button:focus {
   border: none;
   box-shadow: none;
 }
-
 .faq-button:hover {
   color: #d9ada0;
 }
@@ -462,11 +445,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
-    
+
     //border: map-get($borderShadow, borde);
     //border-radius: map-get($borderShadow, radio);
     //box-shadow: map-get($borderShadow, sombra);
-    
+
 }
 */
 /* FORMULARIO */
@@ -478,13 +461,12 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   /*
-    border: map-get($borderShadow, borde);
-    border-radius: map-get($borderShadow, radio);
-    box-shadow: map-get($borderShadow, sombra);
-    */
+  border: map-get($borderShadow, borde);
+  border-radius: map-get($borderShadow, radio);
+  box-shadow: map-get($borderShadow, sombra);
+  */
   margin-bottom: 20px;
 }
-
 .container-contacto-form form {
   width: 100%;
   height: 100%;
@@ -500,7 +482,6 @@ nav {
 .form-control_field {
   margin-top: 20px;
 }
-
 .form-control_field input,
 .form-control_field select,
 .form-control_field textarea,
@@ -510,25 +491,21 @@ nav {
   border-radius: 3px;
   border: none;
 }
-
 .form-control_field input,
 .form-control_field select {
   /*width: 300px;*/
   width: 100%;
 }
-
 .form-control_field input:focus,
 .form-control_field select:focus {
   background-color: #d9ada0;
   border: 0;
 }
-
 .form-control_field textarea {
   width: 100%;
   height: 170px;
   resize: none;
 }
-
 .form-control_field textarea:focus {
   background-color: #d9ada0;
   border: 0;
@@ -563,13 +540,11 @@ nav {
   margin-top: 13px;
   margin-bottom: 13px;
 }
-
 .buttons button {
   width: 120px;
   margin: 15px 15px;
   background-color: #d9ada0;
 }
-
 .buttons button:hover {
   opacity: 0.8;
   border: 0;
@@ -591,7 +566,6 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .container-footer h4 {
   text-align: center;
   font-weight: 600;
@@ -604,16 +578,13 @@ nav {
   height: 100%;
   padding-top: 10px;
 }
-
 .footer-menu ul {
   padding-left: 30px;
 }
-
 .footer-menu li {
   list-style: none;
   padding: 10px 0;
 }
-
 .footer-menu a {
   text-decoration: none;
   padding: 16px;
@@ -623,7 +594,6 @@ nav {
   color: #8c8c8c;
   text-align: center;
 }
-
 .footer-menu a:hover {
   background-color: #d9ada0;
   border-radius: 3px;
@@ -633,11 +603,9 @@ nav {
   width: 25%;
   padding-top: 10px;
 }
-
 .footer-data p {
   padding-left: 30px;
 }
-
 .footer-data p span {
   font-weight: 600;
 }
@@ -658,7 +626,6 @@ nav {
   padding-left: 30px;
   padding-bottom: 4px;
 }
-
 .footer-info a {
   display: flex;
   flex-direction: row;
@@ -666,11 +633,9 @@ nav {
   color: black;
   text-decoration: none;
 }
-
 .footer-info a:hover {
   opacity: 0.8;
 }
-
 .footer-info i {
   width: 45px;
   height: 45px;
@@ -683,16 +648,13 @@ nav {
   margin-left: -12px;
   margin-top: 6px;
 }
-
 .footer-info i:hover {
   opacity: 0.8;
 }
-
 .footer-info p {
   padding-left: 6px;
   padding-top: 18px;
 }
-
 .footer-info p span {
   font-weight: 600;
 }
@@ -716,12 +678,12 @@ nav {
     flex-wrap: wrap;
     align-items: center;
   }
+
   .container-contacto-form {
     /*width: 650px;*/
     width: 70%;
   }
 }
-
 @media screen and (max-width: 992px) {
   .menu-nav_bar ul {
     display: flex;
@@ -729,14 +691,17 @@ nav {
     flex-wrap: wrap;
     padding-right: 0;
   }
+
   .menu-list {
     width: 100%;
   }
+
   #re_captcha,
-  #re_imageselect {
+#re_imageselect {
     margin-left: 0;
     transform: none;
   }
+
   .buttons {
     width: 100%;
     justify-content: center;
@@ -744,46 +709,56 @@ nav {
   .buttons button {
     padding: 10px;
   }
+
   .footer-menu,
-  .footer-data {
+.footer-data {
     width: 50%;
   }
+
   .footer-social_media {
     width: 100%;
   }
+
   .redes-sociales {
     width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   .footer-info {
     margin-left: 20%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .description {
     padding-top: 90px;
   }
+
   .container-mi-taller .description {
     width: 90%;
   }
+
   .container-folleto {
     padding: 20px 0;
   }
+
   .folleto {
     width: 100%;
   }
+
   .container-contacto-form {
     width: 100%;
   }
+
   .buttons button {
     font-size: 16px;
   }
+
   .redes-sociales {
     width: 100%;
   }
+
   .footer-info i {
     width: 35px;
     height: 35px;
@@ -798,24 +773,24 @@ nav {
     padding-top: 14px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .icon-folleto {
     width: 70px;
     height: 70px;
     margin-top: -60px;
   }
+
   .container-contacto-form {
     /*
-        .buttons {
-            margin-top: 80px;
-        }
-        */
+    .buttons {
+        margin-top: 80px;
+    }
+    */
   }
   .container-contacto-form .name,
-  .container-contacto-form .phone,
-  .container-contacto-form .email,
-  .container-contacto-form .nationality {
+.container-contacto-form .phone,
+.container-contacto-form .email,
+.container-contacto-form .nationality {
     width: 93%;
   }
   .container-contacto-form .message {
@@ -823,32 +798,35 @@ nav {
     height: 116px;
   }
   .container-contacto-form #re_captcha,
-  .container-contacto-form #re_imageselect {
+.container-contacto-form #re_imageselect {
     margin-top: 70px;
   }
+
   .footer-menu,
-  .footer-data {
+.footer-data {
     width: 100%;
   }
+
   .footer-menu ul {
     padding-left: 20px;
   }
   .footer-menu a {
     padding-left: 10px;
   }
+
   .footer-info {
     margin-left: 5px;
   }
-  /*
-    .redes-sociales {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    */
-}
 
+  /*
+  .redes-sociales {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  */
+}
 @media screen and (max-width: 500px) {
   .contacto-info {
     margin-left: 20px;
@@ -865,6 +843,7 @@ nav {
     font-size: 14px;
     padding-top: 13px;
   }
+
   .container-contacto-form .buttons {
     margin-bottom: 10px;
   }
@@ -873,13 +852,13 @@ nav {
     margin-top: 12px;
   }
 }
-
 @media screen and (max-width: 430px) {
   .icon-folleto {
     width: 50px;
     height: 50px;
     margin-top: -40px;
   }
+
   .contacto-info {
     margin-left: 15px;
     margin-top: 10px;
@@ -895,14 +874,14 @@ nav {
     font-size: 11px;
     padding-top: 10px;
   }
+
   #re_captcha,
-  #re_imageselect {
+#re_imageselect {
     transform: scale(0.84);
     transform-origin: 0 0;
     margin-left: 48px;
   }
 }
-
 @media screen and (max-width: 360px) {
   .menu-logo {
     width: 125px;
@@ -910,14 +889,17 @@ nav {
   .menu-logo img {
     width: 125px;
   }
+
   .container-index {
     padding-top: 90px;
   }
+
   .icon-folleto {
     width: 48px;
     height: 48px;
     margin-top: -42px;
   }
+
   .contacto-info {
     margin-left: 15px;
     margin-top: 10px;
@@ -933,21 +915,26 @@ nav {
     font-size: 9px;
     padding-top: 10px;
   }
+
   .container-contacto-form .buttons button {
     width: 70%;
     margin-top: 12px;
   }
+
   #re_captcha,
-  #re_imageselect {
+#re_imageselect {
     transform: scale(0.7);
     margin-left: 92px;
   }
+
   .footer-menu ul {
     padding-left: 0;
   }
+
   .footer-data p {
     padding-left: 10px;
   }
+
   .footer-info {
     margin-left: -12px;
   }
@@ -965,12 +952,10 @@ nav {
     padding-top: 10px;
   }
 }
-
 @media screen and (max-width: 280px) {
   #re_captcha,
-  #re_imageselect {
+#re_imageselect {
     transform: scale(0.6);
     margin-left: 122px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

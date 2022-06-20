@@ -57,7 +57,7 @@ $(document).ready(function () {
                         });
 
                         //Redireccionamos la página de Mercado Pago a los 3 segundos
-                        setTimeout(function () {
+                        /*setTimeout(function () {
                             const url =
                                 $("select[name=nationality]").val() ===
                                 "Argentina"
@@ -67,6 +67,16 @@ $(document).ready(function () {
                             window.open(url, "_blank");
                             location.href = "/";
                         }, 4000);
+                        */
+                        setTimeout(function () {
+                            const url =
+                                $("select[name=nationality]").val() ===
+                                "Argentina"
+                                    ? "https://mpago.la/1fnsh2H"
+                                    : //Redireccionamos la página de Paypal a los 3 segundos
+                                      "https://paypal.me/nacerconotroserdani?country.x=AR&locale.x=es_XC";
+                            location.href = url;
+                        }, 3000);
                     },
                     error: function () {
                         //Error

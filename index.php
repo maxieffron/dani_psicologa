@@ -443,6 +443,19 @@ $reCaptcha = new ReCaptcha($secret);
                             que escribiste, sentiste, descubriste en el proceso
                             de escritura con otras participantes.
                         </p>
+
+
+                        <p>
+                            <span class="p-underline-weight">
+                                Temario
+                            </span>
+                            <br />
+                            <span class="text-weight">1er encuentro:</span> Mi yo pre maternidad y mi yo hoy. <br />
+                            <span class="text-weight">2do encuentro:</span> Mi maternidad, mi puerperio. Encontrarse en la singularidad. <br />
+                            <span class="text-weight">3er encuentro:</span> Los vínculos cambian, yo también. <br />
+                            <span class="text-weight">4to encuentro:</span> Mi bebé y yo.<br />
+                        </p>
+
                     </div>
                 </div>
 
