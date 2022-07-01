@@ -26,9 +26,9 @@ $reCaptcha = new ReCaptcha($secret);
 
         <meta name="robots" content="index,follow">
   
-        <meta name="description" content="Nacer con otro ser es un espacio para validar las emociones y poner en palabras lo que sentimos cuando nos atraviesa la maternidad.">
+        <meta name="description" content="Nacer Con Otro Ser es un espacio para validar las emociones y poner en palabras lo que sentimos cuando nos atraviesa la maternidad.">
 
-        <meta name="keywords" content="Escritura terapéutica, Maternidad, Puerperio, Emociones, Crianza">
+        <meta name="keywords" content="Nacer Con Otro Ser, Escritura terapéutica, Maternidad, Puerperio, Emociones, Crianza">
 
         <meta name="author" content="Maximiliano Effron">
   
