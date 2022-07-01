@@ -32,7 +32,7 @@ $reCaptcha = new ReCaptcha($secret);
 
         <meta name="author" content="Maximiliano Effron">
   
-        <meta name="copyright" content="Daniela Effron">
+        <meta name="copyright" content="Nacer Con Otro Ser">
   
         <link rel="canonical" href="https://www.nacerconotroser.com/">
 
